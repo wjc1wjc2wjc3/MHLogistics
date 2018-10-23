@@ -1,0 +1,6 @@
+framework module Pods_MHLogistics {
+  umbrella header "Pods-MHLogistics-umbrella.h"
+
+  export *
+  module * { export * }
+}

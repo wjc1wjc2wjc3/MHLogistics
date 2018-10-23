@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MHLogistics
+
+  Created by Apple on 2018/10/23.
+  Copyright © 2018 Apple. All rights reserved.
+*/
+"loginTitle" = "客户端登录";
+"dispatcherLogin" = "调度员登录";
+"singleHeadDriverLogin" = "单头司机登录";
+"HKDriverLogin" = "香港司机登录";
+"horsemanLogin" = "骑师登录";
+"loginButton" = "登录";
+"register" = "注册";
+"forgetPwd" = "忘记密码";
