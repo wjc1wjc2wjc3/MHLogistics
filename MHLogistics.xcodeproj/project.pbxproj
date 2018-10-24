@@ -101,6 +101,10 @@
 		18CD10FF217ED0B400E2621F /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10FE217ED0B400E2621F /* UserInfo.m */; };
 		18CD1102217EEADE00E2621F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18CD1104217EEADE00E2621F /* Localizable.strings */; };
 		18CD110A217F01C300E2621F /* LoginDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD1109217F01C300E2621F /* LoginDropDown.m */; };
+		18CD11102180164A00E2621F /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD110F2180164A00E2621F /* AvatarView.m */; };
+		18CD111321801A0B00E2621F /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111221801A0B00E2621F /* DriverViewController.m */; };
+		18CD111621801B8200E2621F /* DriverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111521801B8200E2621F /* DriverCell.m */; };
+		18CD111C2180498C00E2621F /* DispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111B2180498C00E2621F /* DispatcherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -382,6 +386,14 @@
 		18CD1103217EEADE00E2621F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18CD1108217F01C300E2621F /* LoginDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDropDown.h; sourceTree = "<group>"; };
 		18CD1109217F01C300E2621F /* LoginDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDropDown.m; sourceTree = "<group>"; };
+		18CD110E2180164A00E2621F /* AvatarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
+		18CD110F2180164A00E2621F /* AvatarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvatarView.m; sourceTree = "<group>"; };
+		18CD111121801A0B00E2621F /* DriverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriverViewController.h; sourceTree = "<group>"; };
+		18CD111221801A0B00E2621F /* DriverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriverViewController.m; sourceTree = "<group>"; };
+		18CD111421801B8200E2621F /* DriverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriverCell.h; sourceTree = "<group>"; };
+		18CD111521801B8200E2621F /* DriverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriverCell.m; sourceTree = "<group>"; };
+		18CD111A2180498C00E2621F /* DispatcherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatcherViewController.h; sourceTree = "<group>"; };
+		18CD111B2180498C00E2621F /* DispatcherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatcherViewController.m; sourceTree = "<group>"; };
 		6090890FD79F022431552BA0 /* Pods-MHLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHLogistics.debug.xcconfig"; path = "Target Support Files/Pods-MHLogistics/Pods-MHLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		877E775F85DA7D84E6821070 /* Pods-MHLogistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHLogistics.release.xcconfig"; path = "Target Support Files/Pods-MHLogistics/Pods-MHLogistics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -846,6 +858,8 @@
 				18CD10B0217EBF0A00E2621F /* HZBitPopupView.m */,
 				18CD10B1217EBF0A00E2621F /* IssuanceView.h */,
 				18CD10B2217EBF0A00E2621F /* IssuanceView.m */,
+				18CD110E2180164A00E2621F /* AvatarView.h */,
+				18CD110F2180164A00E2621F /* AvatarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -979,6 +993,8 @@
 		18CD10D2217EC2E000E2621F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18CD111421801B8200E2621F /* DriverCell.h */,
+				18CD111521801B8200E2621F /* DriverCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -988,6 +1004,8 @@
 			children = (
 				18CD10E9217EC6A500E2621F /* HomeViewController.h */,
 				18CD10EA217EC6A500E2621F /* HomeViewController.m */,
+				18CD111121801A0B00E2621F /* DriverViewController.h */,
+				18CD111221801A0B00E2621F /* DriverViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1037,6 +1055,8 @@
 			children = (
 				18CD10EC217EC6CE00E2621F /* AboutViewController.h */,
 				18CD10ED217EC6CE00E2621F /* AboutViewController.m */,
+				18CD111A2180498C00E2621F /* DispatcherViewController.h */,
+				18CD111B2180498C00E2621F /* DispatcherViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1341,6 +1361,7 @@
 				18CD10B3217EBF0A00E2621F /* BitButton.m in Sources */,
 				18CD1014217EBEF200E2621F /* openssl_wrapper.m in Sources */,
 				18CD105D217EBEF800E2621F /* UIControl+Custom.m in Sources */,
+				18CD111C2180498C00E2621F /* DispatcherViewController.m in Sources */,
 				18CD0F96217EBEEB00E2621F /* SearchView.m in Sources */,
 				18CD109E217EBF0400E2621F /* TimeUtils.m in Sources */,
 				18CD1095217EBF0400E2621F /* GeTuiUtils.m in Sources */,
@@ -1348,6 +1369,7 @@
 				18CD1057217EBEF800E2621F /* NSString+UUID.m in Sources */,
 				18CD1051217EBEF800E2621F /* NSDate+String.m in Sources */,
 				18CD10E2217EC34400E2621F /* GTMBase64.m in Sources */,
+				18CD111321801A0B00E2621F /* DriverViewController.m in Sources */,
 				18CD1060217EBEF800E2621F /* UIImage+Rotate.m in Sources */,
 				18CD101B217EBEF200E2621F /* APIManager.m in Sources */,
 				18CD1016217EBEF200E2621F /* DBEntity.m in Sources */,
@@ -1392,6 +1414,7 @@
 				18CD0F98217EBEEB00E2621F /* HZBitViewModel.m in Sources */,
 				18CD0F94217EBEEB00E2621F /* HZBitModel.m in Sources */,
 				18CD0F97217EBEEB00E2621F /* HZBitViewController.m in Sources */,
+				18CD11102180164A00E2621F /* AvatarView.m in Sources */,
 				18CD110A217F01C300E2621F /* LoginDropDown.m in Sources */,
 				18CD1056217EBEF800E2621F /* NSString+MD5.m in Sources */,
 				18CD0F95217EBEEB00E2621F /* ELockTableAlertView.m in Sources */,
@@ -1404,6 +1427,7 @@
 				18CD1055217EBEF800E2621F /* NSString+LittleEndian.m in Sources */,
 				18CD1019217EBEF200E2621F /* LockDBManager.m in Sources */,
 				18CD105A217EBEF800E2621F /* UIAlertView+HZBitAlertAction.m in Sources */,
+				18CD111621801B8200E2621F /* DriverCell.m in Sources */,
 				18CD109C217EBF0400E2621F /* StatusBarUtils.m in Sources */,
 				18CD10BB217EBF0A00E2621F /* IssuanceView.m in Sources */,
 				18CD105B217EBEF800E2621F /* UIButton+EdgeInset.m in Sources */,

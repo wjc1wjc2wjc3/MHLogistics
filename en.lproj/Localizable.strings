@@ -13,3 +13,14 @@
 "loginButton" = "登录";
 "register" = "注册";
 "forgetPwd" = "忘记密码";
+"today" = "今天";
+"reserve" = "预约";
+"pleaseAuthenticateFirst" = "账号未认证,请先认证";
+"cancel" = "取消";
+"immediateCertification" = "是的，立即认证";
+"dispatcherCertification" = "调度员认证";
+"me" = "我的";
+"meIntroduce" = "";
+"authorizedInfo" = "1.调度员认真需要输入公司先关信息来认证;2.请确保提交一辆车辆的信息用于调度员认证;3.认证后可提交多台车辆信息认证;4.认证信息仅用于审核,绝不泄密。";
+"agree" = "同意";
+"protocol" = "《用户使用协议及隐私政策》";
