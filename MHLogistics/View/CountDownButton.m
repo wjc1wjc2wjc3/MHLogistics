@@ -101,14 +101,14 @@
     }
 }
 
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-    if (!self.bNODrawBottom) {
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        CGContextSetFillColorWithColor(context, [UIColor grayColor].CGColor);
-        CGContextFillRect(context, CGRectMake(0, CGRectGetHeight(self.frame) - 0.5, CGRectGetWidth(self.frame), 0.5));
-    }
-}
+//- (void)drawRect:(CGRect)rect {
+//    // Drawing code
+//    if (!self.bNODrawBottom) {
+//        CGContextRef context = UIGraphicsGetCurrentContext();
+//        CGContextSetFillColorWithColor(context, [UIColor grayColor].CGColor);
+//        CGContextFillRect(context, CGRectMake(0, CGRectGetHeight(self.frame) - 0.5, CGRectGetWidth(self.frame), 0.5));
+//    }
+//}
 
 #pragma -mark block
 - (void)countDownChanging:(CountDownChanging)countDownChanging{

@@ -47,9 +47,9 @@
             self.tabBar.frame = CGRectMake(frameRect.origin.x, frameRect.origin.y, frameRect.size.width, frameRect.size.height + 50);
         }
         
-        NSArray *tabIconArray = @[@"icon_tab_home", @"icon_tab_device", @"icon_tab_me"];
-        NSArray *tabIconSelectedArray = @[@"icon_tab_home_selected", @"icon_tab_device_selected", @"icon_tab_me_selected"];
-        NSArray *titleArray = @[@"mainpage", @"device", @"me"];
+        NSArray *tabIconArray = @[@"icon_grap", @"icon_task", @"icon_me"];
+        NSArray *tabIconSelectedArray = @[@"icon_grap", @"icon_task", @"icon_me"];
+        NSArray *titleArray = @[@"grabTheOrder", @"task", @"me"];
         for (NSInteger i = 0; i < items.count; i++) {
                 UITabBarItem *barItem = items[i];
                 barItem.image = [UIImage imageNamed:tabIconArray[i]];

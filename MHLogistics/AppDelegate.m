@@ -14,6 +14,7 @@
 #import "LoginInfoUtils.h"
 #import "UserInfo.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -32,22 +33,24 @@
     
     [ViewControllerUtils showLaunscreenViewController];
     
-    NSString *account = [AccountUtils getAccount];
-    if (!account) {
-        [ViewControllerUtils showLoginViewController];
-    }
-    else
-    {
-        UserInfo *userInfo  = unArchUserInfo;
-        NSInteger loginState = [LoginInfoUtils getLoginState:account];
-        if (loginState == offline || ([[NSNull null] isEqual:userInfo] || !userInfo)) {
-            [ViewControllerUtils showLoginViewController];
-        }
-        else
-        {
-            [ViewControllerUtils showHomeViewController];
-        }
-    }
+    [ViewControllerUtils showHomeViewController];
+    
+//    NSString *account = [AccountUtils getAccount];
+//    if (!account) {
+//        [ViewControllerUtils showLoginViewController];
+//    }
+//    else
+//    {
+//        UserInfo *userInfo  = unArchUserInfo;
+//        NSInteger loginState = [LoginInfoUtils getLoginState:account];
+//        if (loginState == offline || ([[NSNull null] isEqual:userInfo] || !userInfo)) {
+//            [ViewControllerUtils showLoginViewController];
+//        }
+//        else
+//        {
+//            [ViewControllerUtils showHomeViewController];
+//        }
+//    }
     
     [self applications:application didFinishLaunchingWithOptions:launchOptions];
     

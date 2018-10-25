@@ -23,5 +23,12 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self showNaviBar:NO title:LOCALIZEDSTRING(@"zgCardTitle")];
+
+}
 
 @end

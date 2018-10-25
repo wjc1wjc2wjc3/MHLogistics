@@ -73,7 +73,7 @@
         }
     }
     introduceLabel.text = text;
-    introduceLabel.numberOfLines = 4;
+    introduceLabel.numberOfLines = array.count+1;
     introduceLabel.textAlignment = NSTextAlignmentCenter;
     introduceLabel.font = [UIFont boldSystemFontOfSize:17.0];
     _introduceLabel = introduceLabel;
@@ -87,7 +87,7 @@
         return _headerLabel;
     }
     
-    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, kScreenWidth, 100)];
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, kScreenWidth, 100)];
     headerLabel.textColor = MainColor;
     headerLabel.text = @"WELCOME";
     headerLabel.textAlignment = NSTextAlignmentCenter;

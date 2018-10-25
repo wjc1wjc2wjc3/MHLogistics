@@ -73,6 +73,7 @@
 
 +(void)showLoginViewController {
     LoginViewController *loginVC = [[LoginViewController alloc] init];
+    loginVC.vcType = eLogin;
     HZNavViewController *navVC = [[HZNavViewController alloc] initWithRootViewController:loginVC];
     
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;

@@ -42,7 +42,7 @@ CGFloat kAvatarSideLen = 123.0;
 - (void)layoutSubviews {
     
     if (!_scrollView) {
-        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake((kScreenWidth - kAvatarSideLen)/2, 0, (kScreenWidth - kAvatarSideLen)/2, kAvatarSideLen)];
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(50, 0, kAvatarSideLen, kAvatarSideLen)];
         [scrollView setDelegate:self];
         [scrollView setShowsHorizontalScrollIndicator:NO];
         [scrollView setAlwaysBounceHorizontal:YES];
@@ -62,16 +62,19 @@ CGFloat kAvatarSideLen = 123.0;
     
     
     if (!_titleLabel) {
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 45)];
+
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _scrollView.frame.size.height + 10, self.frame.size.width, 30)];
         titleLabel.text = _titleArray[_currentPage];
+        titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:titleLabel];
         _titleLabel =titleLabel;
     }
     
     if (!_leftImageView) {
-        UIImage *image = [UIImage imageNamed:@""];
+        UIImage *image = [UIImage imageNamed:@"left"];
         UIImageView *leftImageView = [[UIImageView alloc] initWithImage:image];
-        leftImageView.frame = CGRectMake(0, 0, (kScreenWidth - kAvatarSideLen)/2, kAvatarSideLen);
+        leftImageView.frame = CGRectMake(0, _scrollView.center.y - image.size.height*0.5, image.size.width, image.size.height);
+        leftImageView.userInteractionEnabled = YES;
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(leftTapAction:)];
         [leftImageView addGestureRecognizer:tapGesture];
         [self addSubview:leftImageView];
@@ -79,9 +82,10 @@ CGFloat kAvatarSideLen = 123.0;
     }
     
     if (!_rightImageView) {
-        UIImage *image = [UIImage imageNamed:@""];
+        UIImage *image = [UIImage imageNamed:@"right"];
         UIImageView *rightImageView = [[UIImageView alloc] initWithImage:image];
-        rightImageView.frame = CGRectMake(0, (kScreenWidth + kAvatarSideLen)/2, (kScreenWidth - kAvatarSideLen)/2, kAvatarSideLen);
+        rightImageView.frame = CGRectMake(_scrollView.frame.origin.x + _scrollView.frame.size.width, _scrollView.center.y - image.size.height*0.5, image.size.width, image.size.height);
+        rightImageView.userInteractionEnabled = YES;
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rightTapAction:)];
         [rightImageView addGestureRecognizer:tapGesture];
         
@@ -106,9 +110,12 @@ CGFloat kAvatarSideLen = 123.0;
     if (!bLeft && _currentPage == _avatarArr.count - 1) {
         return;
     }
-    _currentPage = bLeft ? _currentPage-- : _currentPage++;
+    _currentPage = bLeft ? _currentPage-1 : _currentPage+1;
     _titleLabel.text = _titleArray[_currentPage];
-    _scrollView.contentOffset = CGPointMake(_currentPage*kAvatarSideLen, 0);
+    [UIView animateWithDuration:0.5 animations:^{
+        self->_scrollView.contentOffset = CGPointMake(self->_currentPage*kAvatarSideLen, 0);
+    }];
+
 }
 
 #pragma mark

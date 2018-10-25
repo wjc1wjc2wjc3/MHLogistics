@@ -25,6 +25,8 @@
     [super viewWillAppear:animated];
     
     [self showNaviBar:NO title:LOCALIZEDSTRING(@"me")];
+    
+    [self showAuthor];
 }
 
 - (void)showAuthor {
@@ -34,11 +36,11 @@
     UIAlertAction *ok = [UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"immediateCertification") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [weakSelf dispatcherView];
     }];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"cancel") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"cancel") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     }];
-    [ok setValue:[UIColor blueColor] forKey:@"_titleTextColor"];
-    [alert addAction:cancel];
+    [ok setValue:BlueColor forKey:@"_titleTextColor"];
     [alert addAction:ok];
+    [alert addAction:cancel];
     [self presentViewController:alert animated:YES completion:nil];
 }
 
