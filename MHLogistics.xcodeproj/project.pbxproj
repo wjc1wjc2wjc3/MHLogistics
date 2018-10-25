@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1514F1D6E7F149435FA0F5D1 /* Pods_MHLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156B1046D7EBB0BB7BF6F253 /* Pods_MHLogistics.framework */; };
+		18C87BC52181EE3F00AFC3F4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */; };
+		18C87BC82181EE8B00AFC3F4 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BC72181EE8B00AFC3F4 /* SettingCell.m */; };
+		18C87BCB2181F34200AFC3F4 /* NewPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BCA2181F34200AFC3F4 /* NewPWDViewController.m */; };
+		18C87BCE2181F6FC00AFC3F4 /* DOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BCD2181F6FC00AFC3F4 /* DOperationViewController.m */; };
 		18CD0F4D217EBA0100E2621F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F4C217EBA0100E2621F /* AppDelegate.m */; };
 		18CD0F50217EBA0100E2621F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F4F217EBA0100E2621F /* ViewController.m */; };
 		18CD0F53217EBA0100E2621F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0F51217EBA0100E2621F /* Main.storyboard */; };
@@ -105,6 +109,7 @@
 		18CD111321801A0B00E2621F /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111221801A0B00E2621F /* DriverViewController.m */; };
 		18CD111621801B8200E2621F /* DriverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111521801B8200E2621F /* DriverCell.m */; };
 		18CD111C2180498C00E2621F /* DispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111B2180498C00E2621F /* DispatcherViewController.m */; };
+		18CD11232181E53300E2621F /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD11222181E53300E2621F /* AboutCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +131,14 @@
 
 /* Begin PBXFileReference section */
 		156B1046D7EBB0BB7BF6F253 /* Pods_MHLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C87BC32181EE3F00AFC3F4 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		18C87BC62181EE8B00AFC3F4 /* SettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		18C87BC72181EE8B00AFC3F4 /* SettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		18C87BC92181F34200AFC3F4 /* NewPWDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewPWDViewController.h; sourceTree = "<group>"; };
+		18C87BCA2181F34200AFC3F4 /* NewPWDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewPWDViewController.m; sourceTree = "<group>"; };
+		18C87BCC2181F6FC00AFC3F4 /* DOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOperationViewController.h; sourceTree = "<group>"; };
+		18C87BCD2181F6FC00AFC3F4 /* DOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOperationViewController.m; sourceTree = "<group>"; };
 		18CD0F48217EBA0100E2621F /* MHLogistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHLogistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CD0F4B217EBA0100E2621F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18CD0F4C217EBA0100E2621F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -394,6 +407,8 @@
 		18CD111521801B8200E2621F /* DriverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriverCell.m; sourceTree = "<group>"; };
 		18CD111A2180498C00E2621F /* DispatcherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatcherViewController.h; sourceTree = "<group>"; };
 		18CD111B2180498C00E2621F /* DispatcherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatcherViewController.m; sourceTree = "<group>"; };
+		18CD11212181E53300E2621F /* AboutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutCell.h; sourceTree = "<group>"; };
+		18CD11222181E53300E2621F /* AboutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCell.m; sourceTree = "<group>"; };
 		6090890FD79F022431552BA0 /* Pods-MHLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHLogistics.debug.xcconfig"; path = "Target Support Files/Pods-MHLogistics/Pods-MHLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		877E775F85DA7D84E6821070 /* Pods-MHLogistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHLogistics.release.xcconfig"; path = "Target Support Files/Pods-MHLogistics/Pods-MHLogistics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1046,6 +1061,10 @@
 		18CD10D8217EC2E000E2621F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18CD11212181E53300E2621F /* AboutCell.h */,
+				18CD11222181E53300E2621F /* AboutCell.m */,
+				18C87BC62181EE8B00AFC3F4 /* SettingCell.h */,
+				18C87BC72181EE8B00AFC3F4 /* SettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1057,6 +1076,12 @@
 				18CD10ED217EC6CE00E2621F /* AboutViewController.m */,
 				18CD111A2180498C00E2621F /* DispatcherViewController.h */,
 				18CD111B2180498C00E2621F /* DispatcherViewController.m */,
+				18C87BC32181EE3F00AFC3F4 /* SettingViewController.h */,
+				18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */,
+				18C87BC92181F34200AFC3F4 /* NewPWDViewController.h */,
+				18C87BCA2181F34200AFC3F4 /* NewPWDViewController.m */,
+				18C87BCC2181F6FC00AFC3F4 /* DOperationViewController.h */,
+				18C87BCD2181F6FC00AFC3F4 /* DOperationViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1366,6 +1391,7 @@
 				18CD109E217EBF0400E2621F /* TimeUtils.m in Sources */,
 				18CD1095217EBF0400E2621F /* GeTuiUtils.m in Sources */,
 				18CD1061217EBEF800E2621F /* UIImage+Scale.m in Sources */,
+				18C87BCB2181F34200AFC3F4 /* NewPWDViewController.m in Sources */,
 				18CD1057217EBEF800E2621F /* NSString+UUID.m in Sources */,
 				18CD1051217EBEF800E2621F /* NSDate+String.m in Sources */,
 				18CD10E2217EC34400E2621F /* GTMBase64.m in Sources */,
@@ -1381,6 +1407,7 @@
 				18CD1054217EBEF800E2621F /* NSString+Hex.m in Sources */,
 				18CD10B4217EBF0A00E2621F /* BitTextField.m in Sources */,
 				18CD1017217EBEF200E2621F /* FMDBManager.m in Sources */,
+				18C87BC82181EE8B00AFC3F4 /* SettingCell.m in Sources */,
 				18CD10BE217EC21600E2621F /* HZNavViewController.m in Sources */,
 				18CD108F217EBF0400E2621F /* AESCryptUtils.m in Sources */,
 				18CD100D217EBEF200E2621F /* APAuthInfo.m in Sources */,
@@ -1408,6 +1435,7 @@
 				18CD101A217EBEF200E2621F /* MBManager.m in Sources */,
 				18CD10B5217EBF0A00E2621F /* CountDownButton.m in Sources */,
 				18CD1097217EBF0400E2621F /* LoginInfoUtils.m in Sources */,
+				18CD11232181E53300E2621F /* AboutCell.m in Sources */,
 				18CD109D217EBF0400E2621F /* TabBarUtls.m in Sources */,
 				18CD104F217EBEF800E2621F /* NSData+Add.m in Sources */,
 				18CD109A217EBF0400E2621F /* PhoneUtils.m in Sources */,
@@ -1415,7 +1443,9 @@
 				18CD0F94217EBEEB00E2621F /* HZBitModel.m in Sources */,
 				18CD0F97217EBEEB00E2621F /* HZBitViewController.m in Sources */,
 				18CD11102180164A00E2621F /* AvatarView.m in Sources */,
+				18C87BC52181EE3F00AFC3F4 /* SettingViewController.m in Sources */,
 				18CD110A217F01C300E2621F /* LoginDropDown.m in Sources */,
+				18C87BCE2181F6FC00AFC3F4 /* DOperationViewController.m in Sources */,
 				18CD1056217EBEF800E2621F /* NSString+MD5.m in Sources */,
 				18CD0F95217EBEEB00E2621F /* ELockTableAlertView.m in Sources */,
 				18CD1096217EBF0400E2621F /* HZBitRouter.m in Sources */,

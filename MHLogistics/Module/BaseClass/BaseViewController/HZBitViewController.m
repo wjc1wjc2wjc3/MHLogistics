@@ -46,7 +46,7 @@ NSInteger const indicatorTag = 1000;
     DLog(@" %f, %f", kScreenWidth, kScreenHeight);
     
     self.view.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-    self.view.backgroundColor = GrayColor;
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setSubViewsOffset:(BOOL)decrease {
