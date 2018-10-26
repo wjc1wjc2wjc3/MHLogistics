@@ -28,7 +28,7 @@
         return _alView;
     }
     
-    CGRect rect = CGRectMake(0, 10, kScreenWidth, 30);
+    CGRect rect = CGRectMake(0, 100, kScreenWidth, 60);
     _infoArray = @[LOCALIZEDSTRING(@"fillPersonalInfo"),LOCALIZEDSTRING(@"uploadPhoto"),LOCALIZEDSTRING(@"waitAuthorize")];
     AuthorizeLineView *alView = [[AuthorizeLineView alloc] initWithFrame:rect array:_infoArray];
     _alView = alView;
