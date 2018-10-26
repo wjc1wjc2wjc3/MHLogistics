@@ -22,7 +22,7 @@
         return string;
     }
     
-    ELockWeakSelf();
+    MHWeakSelf();
     NSMutableString *identifyDateFormat = [@"" mutableCopy];
     [dateArray enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSString *objFormat = [weakSelf dateFormat:obj];

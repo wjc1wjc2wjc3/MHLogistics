@@ -59,7 +59,7 @@
 - (void)showAuthor {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:LOCALIZEDSTRING(@"pleaseAuthenticateFirst") message:nil preferredStyle:UIAlertControllerStyleAlert];
     
-    ELockWeakSelf();
+    MHWeakSelf();
     UIAlertAction *ok = [UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"immediateCertification") style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         [weakSelf dispatcherView];
     }];

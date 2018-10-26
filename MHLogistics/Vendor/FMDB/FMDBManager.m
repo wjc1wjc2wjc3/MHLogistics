@@ -241,7 +241,7 @@ NSInteger const kMaxDataBaseCount = 100;  //数据库存储的个人信息最大
     
     FMDatabase * db = [FMDatabase databaseWithPath:_dbPath];
     if ([db open]) {
-        ELockWeakSelf();
+        MHWeakSelf();
         [dictionary enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
             [weakSelf update:db phone:phone key:key value:obj];
         }];

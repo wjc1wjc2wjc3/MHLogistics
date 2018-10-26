@@ -9,7 +9,7 @@
 #import "AuthorizeLineView.h"
 
 CGFloat kRadius = 20.0f;
-CGFloat kTriangle = 3.0f;
+CGFloat kTriangle = 5.0f;
 CGFloat kPadding = 30.0f;
 
 @interface AuthorizeLineView ()
@@ -33,26 +33,19 @@ CGFloat kPadding = 30.0f;
 
 - (void)setCurrentIdx:(NSUInteger)currentIdx {
     _currentIdx = currentIdx;
+    [self setNeedsDisplay];
 }
 
 
 - (void)drawRect:(CGRect)rect {
-    
-    
+
    CGContextRef ctx = UIGraphicsGetCurrentContext();
     
-    
-    CGFloat width = CGRectGetWidth(self.frame);
     NSInteger count = _titleArray.count;
     CGFloat labelWidth = self.frame.size.width/count;
     CGFloat triangleHeight = sqrt(pow(kTriangle, 2) - pow(kTriangle*0.5, 2));
-    CGFloat distance = (width - kPadding*2 - 2*kRadius*count - triangleHeight*(count - 1))/(count - 1);
     CGPoint lastCenter = CGPointZero;
     for (NSUInteger i = 0; i < _titleArray.count; i++) {
-//        CGFloat x = kPadding + i*(kRadius*2 + distance + triangleHeight);
-        
-//        CGFloat x = labelWidth*0.5 - kRadius*0.5;
-        
         //文字
         NSString *wordText = _titleArray[i];
         NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc]init];
@@ -64,15 +57,15 @@ CGFloat kPadding = 30.0f;
         
         //实心圆
         CGContextBeginPath(ctx);
-        UIColor *color = i == _currentIdx ? BlueColor : DeepColor;
+        UIColor *color = i <= _currentIdx ? BlueColor : DeepColor;
         CGColorRef cgColor = color.CGColor;
         const CGFloat *colorComponents = CGColorGetComponents(cgColor);
         CGContextSetRGBFillColor(ctx, colorComponents[0], colorComponents[1], colorComponents[2], colorComponents[3]);
         CGContextAddEllipseInRect(ctx, CGRectMake(center.x - kRadius, 0, kRadius, kRadius));
         CGContextFillPath(ctx);
         
-        //直线
         if (i > 0) {
+            //直线
             CGContextBeginPath(ctx);
             UIColor *color = DeepColor;
             CGColorRef cgColor = color.CGColor;
@@ -82,9 +75,10 @@ CGFloat kPadding = 30.0f;
             CGContextSetLineCap(ctx, kCGLineCapRound);
             CGContextSetLineJoin(ctx, kCGLineJoinRound);
             CGContextMoveToPoint(ctx, lastCenter.x, kRadius*0.5);
-            CGContextAddLineToPoint(ctx, center.x - triangleHeight*2, kRadius*0.5);
+            CGContextAddLineToPoint(ctx, center.x - triangleHeight*2-kRadius, kRadius*0.5);
             CGContextStrokePath(ctx);
 
+            //三角形
             CGContextBeginPath(ctx);
             CGContextMoveToPoint(ctx, center.x - kRadius - triangleHeight, kRadius*0.5 - kTriangle*0.5);
             CGContextAddLineToPoint(ctx, center.x - kRadius, kRadius*0.5);

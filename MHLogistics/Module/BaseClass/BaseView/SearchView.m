@@ -82,7 +82,7 @@
     UIImage *image = [UIImage imageNamed:resId];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [self addSubview:imageView];
-    ELockWeakSelf();
+    MHWeakSelf();
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(weakSelf.mas_centerX);
     }];

@@ -130,9 +130,9 @@
     [deleteAlert addAction:[UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"cancel") style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }]];
-    ELockWeakSelf();
+    MHWeakSelf();
     [deleteAlert addAction:[UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"ok") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        ELockStrongSelf();
+        MHStrongSelf();
         [weakSelf.delegate deleteRow:strongSelf->deleteAccount];
         
     }]];

@@ -195,7 +195,7 @@ NSString *const kCountryPrefix = @"+86";
 
 - (void)showMuitiplyPhone:(NSMutableArray *)phoneArray {
     
-    ELockWeakSelf();
+    MHWeakSelf();
     HZBitPopupView *hzBitPopupView = [[HZBitPopupView alloc] initHZBitPopupView:phoneArray];
     hzBitPopupView.block = ^(NSInteger index) {
         NSString *num = phoneArray[index];

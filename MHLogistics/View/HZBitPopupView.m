@@ -70,7 +70,7 @@ NSString *const strHZBitPopupCellTableViewCell = @"HZBitPopupCellTableViewCell";
 
 #pragma UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ELockWeakSelf();
+    MHWeakSelf();
     [self hideWithBlock:^(MMPopupView *popUpView, BOOL bFinished) {
         if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(HZBitPopupViewItemSelected:index:)]) {
             [weakSelf.delegate HZBitPopupViewItemSelected:popUpView.tag index:indexPath.row];

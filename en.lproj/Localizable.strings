@@ -81,3 +81,17 @@
 "fillPersonalInfo" = "填写个人信息";
 "uploadPhoto" = "上传照片";
 "waitAuthorize" = "等待认证";
+"name" = "姓    名";
+"phone" = "手    机";
+"phoneHK" = "香港电话";
+"customsRecordNumber" = "海关备案号";
+"identifyNumber" = "身份证号码";
+"personAndIdentifyPhoto" = "+请点击上传人与身份证合照";
+"identifyFrontPhoto" = "+请点击上传身份证正面";
+"identifyBackPhoto" = "+请点击上传身份证反面";
+"driveLicensePhoto" = "+请点击上传行驶证";
+"driveLicensesPhoto" = "+请点击上传驾驶证";
+"localPhoto" = "本地图片";
+"takePhoto" = "拍照";
+"noAlbumnRight" = "未获得授权访问相册";
+"noCameraRight" = "未获得授权使用摄像头";

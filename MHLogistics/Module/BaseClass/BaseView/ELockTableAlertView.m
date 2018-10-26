@@ -320,7 +320,7 @@
         [splitView setBackgroundColor:VC_COLOR_BG];
         [_bottomView addSubview:splitView];
         
-        ELockWeakSelf();
+        MHWeakSelf();
         [splitView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(weakSelf.bottomView.mas_top);
             make.left.right.mas_equalTo(weakSelf.bottomView);

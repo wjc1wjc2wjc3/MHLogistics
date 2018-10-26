@@ -96,8 +96,8 @@
 //时间选择的长期
 #define LONG_TERM 2145888000
 
-#define ELockWeakSelf()        __weak typeof (self) weakSelf = self
-#define ELockStrongSelf()        __typeof__(self) strongSelf = weakSelf;
+#define MHWeakSelf()        __weak typeof (self) weakSelf = self
+#define MHStrongSelf()        __typeof__(self) strongSelf = weakSelf;
 //人脸对比成功的阙值
 #define kFaceCompareThreshold 50
 

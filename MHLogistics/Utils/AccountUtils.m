@@ -50,7 +50,7 @@ NSString *const HZBit_IDFA = @"HZBIT_IDFA";
 
 + (void)saveAccountWithoutPWD:(NSString *)account {
     NSArray *accountList = [self refreshAccount:@""];
-    ELockWeakSelf();
+    MHWeakSelf();
     __block BOOL bFound = NO;
     [accountList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSString *saveAccount = (NSString *)obj;

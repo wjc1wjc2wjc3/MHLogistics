@@ -121,7 +121,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    ELockWeakSelf();
+    MHWeakSelf();
     [_issuanceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(weakSelf.mas_left).offset(20.0);
         make.right.mas_equalTo(weakSelf.mas_right).offset(-20.0);
@@ -161,7 +161,7 @@
 }
 
 - (void)ok:(UIButton *)button {
-    ELockWeakSelf();
+    MHWeakSelf();
     [self hideWithBlock:^(MMPopupView *popView, BOOL bFinished) {
         NSDate *theDate = weakSelf.datePicker.date;
         if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(issuanceViewDate:)]) {
