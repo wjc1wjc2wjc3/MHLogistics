@@ -17,6 +17,8 @@
 #define GrayColor RGB(220, 220, 220)
 
 #define BlueColor RGB(0x00, 0xAE, 0xFF)
+
+#define DeepColor RGB(0xF0, 0xF0, 0xF0)
 //电话号码长度
 #define PHONE_NUMBER_LENGTH 11
 

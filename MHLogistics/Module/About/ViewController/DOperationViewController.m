@@ -7,6 +7,10 @@
 //
 
 #import "DOperationViewController.h"
+#import "VehicleCertificationViewController.h"
+#import "VehicleManagementViewController.h"
+#import "DriverAuthorizedViewController.h"
+
 
 @interface DOperationViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -58,21 +62,31 @@
     switch (row) {
         case 0:
         {
-            
+            VehicleCertificationViewController *vehicleCVC = [[VehicleCertificationViewController alloc] init];
+            vehicleCVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vehicleCVC animated:YES];
         }
             break;
         case 1:
         {
+            VehicleManagementViewController *vehicleCVC = [[VehicleManagementViewController alloc] init];
+            vehicleCVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vehicleCVC animated:YES];
             
         }
             break;
         case 2:
         {
+            DriverAuthorizedViewController *vehicleCVC = [[DriverAuthorizedViewController alloc] init];
+            vehicleCVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vehicleCVC animated:YES];
         }
             break;
         case 3:
         {
-            
+            VehicleManagementViewController *vehicleCVC = [[VehicleManagementViewController alloc] init];
+            vehicleCVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vehicleCVC animated:YES];
         }
             break;
         default:

@@ -110,6 +110,17 @@
 		18CD111621801B8200E2621F /* DriverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111521801B8200E2621F /* DriverCell.m */; };
 		18CD111C2180498C00E2621F /* DispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD111B2180498C00E2621F /* DispatcherViewController.m */; };
 		18CD11232181E53300E2621F /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD11222181E53300E2621F /* AboutCell.m */; };
+		18ECD0A621829DD600009D0B /* VehicleCertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0A521829DD600009D0B /* VehicleCertificationViewController.m */; };
+		18ECD0A92182AAAC00009D0B /* VehicleManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0A82182AAAC00009D0B /* VehicleManagementViewController.m */; };
+		18ECD0AC2182B0EF00009D0B /* VehicleManageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0AB2182B0EF00009D0B /* VehicleManageCell.m */; };
+		18ECD0AF2182B6A800009D0B /* VehicleMgrInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0AE2182B6A800009D0B /* VehicleMgrInfo.m */; };
+		18ECD0B52182EA2800009D0B /* SearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0B42182EA2800009D0B /* SearchResultTableViewController.m */; };
+		18ECD0B82182ED4500009D0B /* DriverAuthorizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0B72182ED4500009D0B /* DriverAuthorizedViewController.m */; };
+		18ECD0BE2182F14E00009D0B /* AInfoInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0BD2182F14E00009D0B /* AInfoInputViewController.m */; };
+		18ECD0C72182F46200009D0B /* PopMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0C42182F46200009D0B /* PopMenuCell.m */; };
+		18ECD0C82182F46200009D0B /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0C62182F46200009D0B /* PopMenuView.m */; };
+		18ECD0CB2182F4C000009D0B /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0CA2182F4C000009D0B /* PopMenuModel.m */; };
+		18ECD0CE2182FE9600009D0B /* AuthorizeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0CD2182FE9600009D0B /* AuthorizeLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -409,6 +420,28 @@
 		18CD111B2180498C00E2621F /* DispatcherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatcherViewController.m; sourceTree = "<group>"; };
 		18CD11212181E53300E2621F /* AboutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutCell.h; sourceTree = "<group>"; };
 		18CD11222181E53300E2621F /* AboutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCell.m; sourceTree = "<group>"; };
+		18ECD0A421829DD600009D0B /* VehicleCertificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleCertificationViewController.h; sourceTree = "<group>"; };
+		18ECD0A521829DD600009D0B /* VehicleCertificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleCertificationViewController.m; sourceTree = "<group>"; };
+		18ECD0A72182AAAC00009D0B /* VehicleManagementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleManagementViewController.h; sourceTree = "<group>"; };
+		18ECD0A82182AAAC00009D0B /* VehicleManagementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleManagementViewController.m; sourceTree = "<group>"; };
+		18ECD0AA2182B0EF00009D0B /* VehicleManageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleManageCell.h; sourceTree = "<group>"; };
+		18ECD0AB2182B0EF00009D0B /* VehicleManageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleManageCell.m; sourceTree = "<group>"; };
+		18ECD0AD2182B6A800009D0B /* VehicleMgrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleMgrInfo.h; sourceTree = "<group>"; };
+		18ECD0AE2182B6A800009D0B /* VehicleMgrInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleMgrInfo.m; sourceTree = "<group>"; };
+		18ECD0B32182EA2800009D0B /* SearchResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewController.h; sourceTree = "<group>"; };
+		18ECD0B42182EA2800009D0B /* SearchResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewController.m; sourceTree = "<group>"; };
+		18ECD0B62182ED4500009D0B /* DriverAuthorizedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriverAuthorizedViewController.h; sourceTree = "<group>"; };
+		18ECD0B72182ED4500009D0B /* DriverAuthorizedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriverAuthorizedViewController.m; sourceTree = "<group>"; };
+		18ECD0BC2182F14E00009D0B /* AInfoInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AInfoInputViewController.h; sourceTree = "<group>"; };
+		18ECD0BD2182F14E00009D0B /* AInfoInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AInfoInputViewController.m; sourceTree = "<group>"; };
+		18ECD0C32182F46200009D0B /* PopMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuCell.h; sourceTree = "<group>"; };
+		18ECD0C42182F46200009D0B /* PopMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuCell.m; sourceTree = "<group>"; };
+		18ECD0C52182F46200009D0B /* PopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuView.h; sourceTree = "<group>"; };
+		18ECD0C62182F46200009D0B /* PopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuView.m; sourceTree = "<group>"; };
+		18ECD0C92182F4C000009D0B /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
+		18ECD0CA2182F4C000009D0B /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
+		18ECD0CC2182FE9600009D0B /* AuthorizeLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizeLineView.h; sourceTree = "<group>"; };
+		18ECD0CD2182FE9600009D0B /* AuthorizeLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizeLineView.m; sourceTree = "<group>"; };
 		6090890FD79F022431552BA0 /* Pods-MHLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHLogistics.debug.xcconfig"; path = "Target Support Files/Pods-MHLogistics/Pods-MHLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		877E775F85DA7D84E6821070 /* Pods-MHLogistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHLogistics.release.xcconfig"; path = "Target Support Files/Pods-MHLogistics/Pods-MHLogistics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -853,6 +886,7 @@
 		18CD10A0217EBF0A00E2621F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18ECD0C12182F46200009D0B /* PopMenuView */,
 				18CD1108217F01C300E2621F /* LoginDropDown.h */,
 				18CD1109217F01C300E2621F /* LoginDropDown.m */,
 				18CD10A1217EBF0A00E2621F /* BitButton.h */,
@@ -875,6 +909,8 @@
 				18CD10B2217EBF0A00E2621F /* IssuanceView.m */,
 				18CD110E2180164A00E2621F /* AvatarView.h */,
 				18CD110F2180164A00E2621F /* AvatarView.m */,
+				18ECD0CC2182FE9600009D0B /* AuthorizeLineView.h */,
+				18ECD0CD2182FE9600009D0B /* AuthorizeLineView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1047,6 +1083,8 @@
 		18CD10D6217EC2E000E2621F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				18ECD0AD2182B6A800009D0B /* VehicleMgrInfo.h */,
+				18ECD0AE2182B6A800009D0B /* VehicleMgrInfo.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1065,6 +1103,8 @@
 				18CD11222181E53300E2621F /* AboutCell.m */,
 				18C87BC62181EE8B00AFC3F4 /* SettingCell.h */,
 				18C87BC72181EE8B00AFC3F4 /* SettingCell.m */,
+				18ECD0AA2182B0EF00009D0B /* VehicleManageCell.h */,
+				18ECD0AB2182B0EF00009D0B /* VehicleManageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1082,6 +1122,16 @@
 				18C87BCA2181F34200AFC3F4 /* NewPWDViewController.m */,
 				18C87BCC2181F6FC00AFC3F4 /* DOperationViewController.h */,
 				18C87BCD2181F6FC00AFC3F4 /* DOperationViewController.m */,
+				18ECD0A421829DD600009D0B /* VehicleCertificationViewController.h */,
+				18ECD0A521829DD600009D0B /* VehicleCertificationViewController.m */,
+				18ECD0A72182AAAC00009D0B /* VehicleManagementViewController.h */,
+				18ECD0A82182AAAC00009D0B /* VehicleManagementViewController.m */,
+				18ECD0B32182EA2800009D0B /* SearchResultTableViewController.h */,
+				18ECD0B42182EA2800009D0B /* SearchResultTableViewController.m */,
+				18ECD0B62182ED4500009D0B /* DriverAuthorizedViewController.h */,
+				18ECD0B72182ED4500009D0B /* DriverAuthorizedViewController.m */,
+				18ECD0BC2182F14E00009D0B /* AInfoInputViewController.h */,
+				18ECD0BD2182F14E00009D0B /* AInfoInputViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1150,6 +1200,27 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18ECD0C12182F46200009D0B /* PopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				18ECD0C22182F46200009D0B /* Cell */,
+				18ECD0C52182F46200009D0B /* PopMenuView.h */,
+				18ECD0C62182F46200009D0B /* PopMenuView.m */,
+				18ECD0C92182F4C000009D0B /* PopMenuModel.h */,
+				18ECD0CA2182F4C000009D0B /* PopMenuModel.m */,
+			);
+			path = PopMenuView;
+			sourceTree = "<group>";
+		};
+		18ECD0C22182F46200009D0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18ECD0C32182F46200009D0B /* PopMenuCell.h */,
+				18ECD0C42182F46200009D0B /* PopMenuCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1AD94FB608B241DFCEDBD9E5 /* Pods */ = {
@@ -1386,6 +1457,7 @@
 				18CD10B3217EBF0A00E2621F /* BitButton.m in Sources */,
 				18CD1014217EBEF200E2621F /* openssl_wrapper.m in Sources */,
 				18CD105D217EBEF800E2621F /* UIControl+Custom.m in Sources */,
+				18ECD0C72182F46200009D0B /* PopMenuCell.m in Sources */,
 				18CD111C2180498C00E2621F /* DispatcherViewController.m in Sources */,
 				18CD0F96217EBEEB00E2621F /* SearchView.m in Sources */,
 				18CD109E217EBF0400E2621F /* TimeUtils.m in Sources */,
@@ -1401,8 +1473,10 @@
 				18CD1016217EBEF200E2621F /* DBEntity.m in Sources */,
 				18CD109B217EBF0400E2621F /* QRUtils.m in Sources */,
 				18CD1050217EBEF800E2621F /* NSData+AES.m in Sources */,
+				18ECD0C82182F46200009D0B /* PopMenuView.m in Sources */,
 				18CD0F82217EBEE400E2621F /* BitUpdateApp.m in Sources */,
 				18CD109F217EBF0400E2621F /* ViewControllerUtils.m in Sources */,
+				18ECD0A621829DD600009D0B /* VehicleCertificationViewController.m in Sources */,
 				18CD10EB217EC6A500E2621F /* HomeViewController.m in Sources */,
 				18CD1054217EBEF800E2621F /* NSString+Hex.m in Sources */,
 				18CD10B4217EBF0A00E2621F /* BitTextField.m in Sources */,
@@ -1417,6 +1491,7 @@
 				18CD1099217EBF0400E2621F /* MacUtils.m in Sources */,
 				18CD0F50217EBA0100E2621F /* ViewController.m in Sources */,
 				18CD0F5B217EBA0700E2621F /* main.m in Sources */,
+				18ECD0B82182ED4500009D0B /* DriverAuthorizedViewController.m in Sources */,
 				18CD1053217EBEF800E2621F /* NSMutableArray+JC.m in Sources */,
 				18CD10B9217EBF0A00E2621F /* HZBitPopupCellTableViewCell.m in Sources */,
 				18CD10B7217EBF0A00E2621F /* HZBitActivityIndicatorView.m in Sources */,
@@ -1424,13 +1499,16 @@
 				18CD1091217EBF0400E2621F /* AppUtils.m in Sources */,
 				18CD10B6217EBF0A00E2621F /* CustomTabbar.m in Sources */,
 				18CD1092217EBF0400E2621F /* CRCUtils.m in Sources */,
+				18ECD0AF2182B6A800009D0B /* VehicleMgrInfo.m in Sources */,
 				18CD1093217EBF0400E2621F /* DateFormatUtils.m in Sources */,
 				18CD10EE217EC6CE00E2621F /* AboutViewController.m in Sources */,
 				18CD1018217EBEF200E2621F /* LockAddress.m in Sources */,
 				18CD1094217EBF0400E2621F /* DeviceUtils.m in Sources */,
+				18ECD0B52182EA2800009D0B /* SearchResultTableViewController.m in Sources */,
 				18CD10FF217ED0B400E2621F /* UserInfo.m in Sources */,
 				18CD1011217EBEF200E2621F /* PayResponseApp.m in Sources */,
 				18CD100E217EBEF200E2621F /* APOrderInfo.m in Sources */,
+				18ECD0CE2182FE9600009D0B /* AuthorizeLineView.m in Sources */,
 				18CD101C217EBEF200E2621F /* ErrorUserInfo.m in Sources */,
 				18CD101A217EBEF200E2621F /* MBManager.m in Sources */,
 				18CD10B5217EBF0A00E2621F /* CountDownButton.m in Sources */,
@@ -1453,18 +1531,22 @@
 				18CD0F83217EBEE400E2621F /* Contacts.m in Sources */,
 				18CD105C217EBEF800E2621F /* UIButton+Extension.m in Sources */,
 				18CD105E217EBEF800E2621F /* UIImage+CircleImage.m in Sources */,
+				18ECD0BE2182F14E00009D0B /* AInfoInputViewController.m in Sources */,
 				18CD108E217EBF0400E2621F /* AccountUtils.m in Sources */,
 				18CD1055217EBEF800E2621F /* NSString+LittleEndian.m in Sources */,
 				18CD1019217EBEF200E2621F /* LockDBManager.m in Sources */,
 				18CD105A217EBEF800E2621F /* UIAlertView+HZBitAlertAction.m in Sources */,
 				18CD111621801B8200E2621F /* DriverCell.m in Sources */,
 				18CD109C217EBF0400E2621F /* StatusBarUtils.m in Sources */,
+				18ECD0A92182AAAC00009D0B /* VehicleManagementViewController.m in Sources */,
 				18CD10BB217EBF0A00E2621F /* IssuanceView.m in Sources */,
 				18CD105B217EBEF800E2621F /* UIButton+EdgeInset.m in Sources */,
 				18CD105F217EBEF800E2621F /* UIImage+Color.m in Sources */,
+				18ECD0CB2182F4C000009D0B /* PopMenuModel.m in Sources */,
 				18CD10DD217EC30000E2621F /* LoginViewController.m in Sources */,
 				18CD1090217EBF0400E2621F /* AESUtils.m in Sources */,
 				18CD1059217EBEF800E2621F /* UIAlertAction+Extension.m in Sources */,
+				18ECD0AC2182B0EF00009D0B /* VehicleManageCell.m in Sources */,
 				18CD0F4D217EBA0100E2621F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
