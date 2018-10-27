@@ -1,12 +1,12 @@
 //
-//  AInfoInputViewController.m
+//  VehicleAuthorizeViewController.m
 //  MHLogistics
 //
-//  Created by Apple on 2018/10/26.
+//  Created by wjc on 10/27/18.
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "AInfoInputViewController.h"
+#import "VehicleAuthorizeViewController.h"
 #import "AuthorizeLineView.h"
 #import "UIImage+Color.h"
 #import "UIButton+Extension.h"
@@ -15,7 +15,7 @@
 #import <AVFoundation/AVCaptureDevice.h>
 #import <AVFoundation/AVMediaFormat.h>
 
-@interface AInfoInputViewController ()<UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface VehicleAuthorizeViewController ()<UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, weak)AuthorizeLineView *alView;
 @property (nonatomic, weak)UIScrollView *scrollView;
@@ -37,12 +37,12 @@
 
 @end
 
-@implementation AInfoInputViewController
+@implementation VehicleAuthorizeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _infoArray = @[LOCALIZEDSTRING(@"fillPersonalInfo"),LOCALIZEDSTRING(@"uploadPhoto"),LOCALIZEDSTRING(@"waitAuthorize")];
+    _infoArray = @[LOCALIZEDSTRING(@"fillVehicleInfo"),LOCALIZEDSTRING(@"uploadPhoto"),LOCALIZEDSTRING(@"waitAuthorize")];
     [self.view addSubview:self.alView];
     [self.view addSubview:self.scrollView];
     [self setCurrentPage:0];
@@ -61,10 +61,13 @@
     [scrollView setAlwaysBounceHorizontal:YES];
     [scrollView setPagingEnabled:YES];
     [scrollView setScrollEnabled:YES];
-    [scrollView setContentSize:CGSizeMake(kScreenWidth*_infoArray.count, height)];
+    [scrollView setContentSize:CGSizeMake(kScreenWidth*_infoArray.count, height+100)];
     for (NSUInteger i = 0; i < _infoArray.count; i++) {
         UIScrollView *sv = [[UIScrollView alloc] initWithFrame:CGRectMake(i*kScreenWidth, 0, kScreenWidth, height)];
         sv.tag = i;
+        [sv setAlwaysBounceVertical:YES];
+        [sv setScrollEnabled:YES];
+        [sv setShowsVerticalScrollIndicator:NO];
         [sv setContentSize:CGSizeMake(kScreenWidth, height)];
         if (i == 0) {
             [self addPersonInfo:sv];
@@ -75,7 +78,7 @@
             [sv setAlwaysBounceVertical:YES];
             [self takePhoto:sv];
         }
-
+        
         [scrollView addSubview:sv];
     }
     
@@ -86,7 +89,7 @@
 }
 
 - (void)takePhoto:(UIScrollView *)scrollView {
-    NSArray *infoArray = @[LOCALIZEDSTRING(@"personAndIdentifyPhoto"),LOCALIZEDSTRING(@"identifyFrontPhoto"),LOCALIZEDSTRING(@"identifyBackPhoto"),LOCALIZEDSTRING(@"customsRecordNumber"),LOCALIZEDSTRING(@"driveLicensePhoto"),LOCALIZEDSTRING(@"driveLicensesPhoto")];
+    NSArray *infoArray = @[LOCALIZEDSTRING(@"driveLicensePhoto")];
     CGFloat height = 130;
     CGFloat padding = 50;
     _imageViewArray = [NSMutableArray arrayWithCapacity:infoArray.count];
@@ -151,7 +154,7 @@
     };
     [hzBitPopupView show];
 }
-        
+
 
 - (void)takePhotoAction:(NSInteger)tag {
     if (tag == 0) {
@@ -185,14 +188,21 @@
     if (!scrollView) {
         return;
     }
-    
-    NSArray *personTitleArray = @[LOCALIZEDSTRING(@"name"),LOCALIZEDSTRING(@"phone"),LOCALIZEDSTRING(@"phoneHK"),LOCALIZEDSTRING(@"customsRecordNumber"),LOCALIZEDSTRING(@"identifyNumber")];
+
+    NSArray *personTitleArray = @[LOCALIZEDSTRING(@"vehicleHKLP"),LOCALIZEDSTRING(@"vehicleMLLP"),LOCALIZEDSTRING(@"vehicleHead"),LOCALIZEDSTRING(@"vehicleCustomNumber"),LOCALIZEDSTRING(@"vehicleICCode"),LOCALIZEDSTRING(@"vehicleAgencyCode"),LOCALIZEDSTRING(@"vehicleTon"),LOCALIZEDSTRING(@"vehicleWidthH"),LOCALIZEDSTRING(@"vehicleCloseRoadPermit")];
     _infoTFArray = [NSMutableArray arrayWithCapacity:personTitleArray.count];
     CGFloat titleWidth = 100;
     CGFloat padding = 40;
     CGFloat height = 30;
+    CGRect lastRect = CGRectZero;
     for (NSUInteger i = 0; i < personTitleArray.count; i++) {
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(padding, 20 + i*(height + 20), titleWidth, height)];
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(padding, 20 + i*(height + 10), titleWidth, height)];
+        if (i == personTitleArray.count - 1) {
+            lastRect = CGRectMake(padding, 20 + i*(height + 10), titleWidth, height*2);
+            titleLabel.frame = lastRect;
+            titleLabel.numberOfLines = 2;
+            titleLabel.textAlignment = NSTextAlignmentNatural;
+        }
         titleLabel.textColor = [UIColor blackColor];
         titleLabel.text = personTitleArray[i];
         titleLabel.font = [UIFont systemFontOfSize:13.0];
@@ -202,24 +212,13 @@
         titleTF.clearButtonMode = UITextFieldViewModeWhileEditing;
         titleTF.borderStyle = UITextBorderStyleRoundedRect;
         titleTF.tag = i;
-        if (i == 0) {
-            titleTF.keyboardType = UIKeyboardTypeNamePhonePad;
-        }
-        else if (i == 1 || i == 2)
-        {
-            titleTF.keyboardType = UIKeyboardTypePhonePad;
-        }
-        else
-        {
-            titleTF.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
-        }
-            
+        
         [scrollView addSubview:titleTF];
         [_infoTFArray addObject:titleTF];
     }
     
     [scrollView addSubview:self.nextBtn];
-    self.nextBtn.frame = CGRectMake(40, scrollView.frame.size.height - 100, kScreenWidth - 40*2, 40);
+    self.nextBtn.frame = CGRectMake(40, lastRect.origin.y + lastRect.size.height + 20, kScreenWidth - 40*2, 40);
 }
 
 
@@ -257,7 +256,7 @@
 {
     [super viewWillAppear:animated];
     
-    [self showNaviBar:YES title:LOCALIZEDSTRING(@"authenticationInformationInput")];
+    [self showNaviBar:YES title:LOCALIZEDSTRING(@"vehicleAuthorizeTitle")];
 }
 
 #pragma mark
@@ -315,7 +314,7 @@
         offset.x = self->_currentPage*self->_scrollView.frame.size.width;
         self->_scrollView.contentOffset = offset;
     }];
-
+    
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -327,5 +326,10 @@
     imageView.image = image;
 }
 
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end

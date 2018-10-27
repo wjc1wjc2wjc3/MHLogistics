@@ -10,6 +10,7 @@
 #import "SettingCell.h"
 #import "UIImage+Color.h"
 #import "NewPWDViewController.h"
+#import "ViewControllerUtils.h"
 
 @interface SettingViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -52,13 +53,13 @@
     [exitLogin setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     exitLogin.layer.cornerRadius = 20;
     exitLogin.layer.masksToBounds = YES;
-    exitLogin.enabled = NO;
+    exitLogin.enabled = YES;
     _exitLogin = exitLogin;
     return exitLogin;
 }
 
 - (void)exitAction:(UIButton *)btn {
-    
+    [ViewControllerUtils showLoginViewController];
 }
 
 - (UITableView *)tableView {
@@ -66,7 +67,7 @@
         return _tableView;
     }
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 100) style:UITableViewStylePlain];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight - 100) style:UITableViewStylePlain];
     [self setExtraCellLineHidden:tableView];
     tableView.delegate = self;
     tableView.dataSource = self;

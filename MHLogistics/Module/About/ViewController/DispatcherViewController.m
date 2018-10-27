@@ -9,6 +9,7 @@
 #import "DispatcherViewController.h"
 #import "UIButton+Extension.h"
 #import "UIImage+Color.h"
+#import "DispatcherAuthorizeViewController.h"
 
 @interface DispatcherViewController ()
 
@@ -124,7 +125,9 @@
 }
 
 - (void)nextAction:(UIButton *)btn {
-    
+    DispatcherAuthorizeViewController *daVC = [[DispatcherAuthorizeViewController alloc] init];
+    daVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:daVC animated:YES];
 }
 
 - (UILabel *)introduceLabel {
@@ -133,7 +136,6 @@
     }
     
     UILabel *introduceLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, _headerImageView.frame.origin.y + CGRectGetHeight(_headerImageView.frame), kScreenWidth- 40*2, 200)];
-//    introduceLabel.textColor = [UIColor blackColor];
     NSString *text = LOCALIZEDSTRING(@"authorizedInfo");
     NSArray *array = [text componentsSeparatedByString:@";"];
     NSMutableString *textM = [@"" mutableCopy];

@@ -13,6 +13,7 @@
 #import "AvatarView.h"
 #import "HZBitPopupView.h"
 #import "CountDownButton.h"
+#import "ViewControllerUtils.h"
 
 @interface LoginViewController ()<UITextFieldDelegate> {
     NSString *_phonePrefix;
@@ -287,7 +288,7 @@
 }
 
 - (void)okAction:(UIButton *)btn {
-    
+    [ViewControllerUtils showHomeViewController];
 }
 
 - (void)loginUI {
@@ -618,13 +619,14 @@
     [loginBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     loginBtn.layer.cornerRadius = 20;
     loginBtn.layer.masksToBounds = YES;
-    loginBtn.enabled = NO;
+    loginBtn.enabled = YES;
     _loginBtn = loginBtn;
     return loginBtn;
 }
 
 - (void)login:(UIButton *)button {
     DLog(@"login");
+    [ViewControllerUtils showHomeViewController];
 }
 
 - (void)viewWillAppear:(BOOL)animated

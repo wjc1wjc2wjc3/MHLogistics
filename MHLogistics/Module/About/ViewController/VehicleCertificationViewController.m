@@ -9,6 +9,7 @@
 #import "VehicleCertificationViewController.h"
 #import "UIImage+Color.h"
 #import "UIButton+Extension.h"
+#import "VehicleAuthorizeViewController.h"
 
 @interface VehicleCertificationViewController ()
 
@@ -141,13 +142,16 @@
     [startBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     startBtn.layer.cornerRadius = 20;
     startBtn.layer.masksToBounds = YES;
-    startBtn.enabled = NO;
+    startBtn.enabled = YES;
     _startBtn = startBtn;
     return startBtn;
 }
 
 - (void)start:(UIButton *)button {
     DLog(@"start");
+    VehicleAuthorizeViewController *vaVC = [[VehicleAuthorizeViewController alloc] init];
+    vaVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vaVC animated:YES];
 }
 
 @end

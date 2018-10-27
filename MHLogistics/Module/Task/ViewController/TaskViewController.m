@@ -7,9 +7,12 @@
 //
 
 #import "TaskViewController.h"
+#import "SliderHeaderView.h"
 
 @interface TaskViewController ()
 
+@property (nonatomic, weak) SliderHeaderView *shView;
+@property (nonatomic, weak) UIScrollView *scrollView;
 @end
 
 @implementation TaskViewController
@@ -17,16 +20,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.view addSubview:self.shView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (SliderHeaderView *)shView {
+    if (_shView) {
+        return _shView;
+    }
+    
+    NSArray *array = @[LOCALIZEDSTRING(@"excuting"), LOCALIZEDSTRING(@"excuted")];
+    SliderHeaderView *shView = [[SliderHeaderView alloc] initWithFrame:CGRectMake(0, 80, kScreenWidth, 40) array:array];
+    shView.block = ^(NSUInteger tag) {
+        
+    };
+    _shView = shView;
+    
+    return _shView;
 }
-*/
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self showNaviBar:NO title:LOCALIZEDSTRING(@"zgCardTitle")];
+    
+}
 
 @end

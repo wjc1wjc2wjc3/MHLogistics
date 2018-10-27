@@ -1,12 +1,12 @@
 //
-//  AInfoInputViewController.m
+//  DispatcherAuthorizeViewController.m
 //  MHLogistics
 //
-//  Created by Apple on 2018/10/26.
+//  Created by wjc on 10/27/18.
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "AInfoInputViewController.h"
+#import "DispatcherAuthorizeViewController.h"
 #import "AuthorizeLineView.h"
 #import "UIImage+Color.h"
 #import "UIButton+Extension.h"
@@ -15,7 +15,7 @@
 #import <AVFoundation/AVCaptureDevice.h>
 #import <AVFoundation/AVMediaFormat.h>
 
-@interface AInfoInputViewController ()<UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface DispatcherAuthorizeViewController ()<UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, weak)AuthorizeLineView *alView;
 @property (nonatomic, weak)UIScrollView *scrollView;
@@ -37,7 +37,7 @@
 
 @end
 
-@implementation AInfoInputViewController
+@implementation DispatcherAuthorizeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,7 +75,7 @@
             [sv setAlwaysBounceVertical:YES];
             [self takePhoto:sv];
         }
-
+        
         [scrollView addSubview:sv];
     }
     
@@ -151,7 +151,7 @@
     };
     [hzBitPopupView show];
 }
-        
+
 
 - (void)takePhotoAction:(NSInteger)tag {
     if (tag == 0) {
@@ -186,7 +186,7 @@
         return;
     }
     
-    NSArray *personTitleArray = @[LOCALIZEDSTRING(@"name"),LOCALIZEDSTRING(@"phone"),LOCALIZEDSTRING(@"phoneHK"),LOCALIZEDSTRING(@"customsRecordNumber"),LOCALIZEDSTRING(@"identifyNumber")];
+    NSArray *personTitleArray = @[LOCALIZEDSTRING(@"dispatcherName"),LOCALIZEDSTRING(@"dispatcherPhone"),LOCALIZEDSTRING(@"dispatcherCompany"),LOCALIZEDSTRING(@"dispatcherCompanyTel"),LOCALIZEDSTRING(@"dispatcherCompanyAddress"),LOCALIZEDSTRING(@"dispatcherEmail"),LOCALIZEDSTRING(@"dispatcherIdentity")];
     _infoTFArray = [NSMutableArray arrayWithCapacity:personTitleArray.count];
     CGFloat titleWidth = 100;
     CGFloat padding = 40;
@@ -205,15 +205,27 @@
         if (i == 0) {
             titleTF.keyboardType = UIKeyboardTypeNamePhonePad;
         }
-        else if (i == 1 || i == 2)
+        else if (i == 1)
         {
             titleTF.keyboardType = UIKeyboardTypePhonePad;
+        }
+        else if (i == 2) {
+            titleTF.keyboardType = UIKeyboardTypeDefault;
+        }
+        else if (i == 3) {
+            titleTF.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+        }
+        else if (i == 4) {
+            titleTF.keyboardType = UIKeyboardTypeDefault;
+        }
+        else if (i == 5) {
+            titleTF.keyboardType = UIKeyboardTypeEmailAddress;
         }
         else
         {
             titleTF.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
         }
-            
+        
         [scrollView addSubview:titleTF];
         [_infoTFArray addObject:titleTF];
     }
@@ -257,7 +269,7 @@
 {
     [super viewWillAppear:animated];
     
-    [self showNaviBar:YES title:LOCALIZEDSTRING(@"authenticationInformationInput")];
+    [self showNaviBar:YES title:LOCALIZEDSTRING(@"dipatcherAuthorizeTitle")];
 }
 
 #pragma mark
@@ -315,7 +327,7 @@
         offset.x = self->_currentPage*self->_scrollView.frame.size.width;
         self->_scrollView.contentOffset = offset;
     }];
-
+    
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -325,6 +337,12 @@
     
     UIImageView *imageView = _imageViewArray[_currentImageViewIdx];
     imageView.image = image;
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 
