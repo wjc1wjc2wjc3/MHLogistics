@@ -32,6 +32,7 @@ typedef void(^headerRefreshBlock)(void);
 - (void)setNaviBarBackgroundColor:(UIColor *)color;
 - (void)setNavibarBlock:(naviBackBlock)block;
 - (void)showRightNavi:(BOOL)bShow title:(NSString *)title block:(naviRightBlock)block;
+- (void)setRightNaviTitle:(NSString *)title;
 - (void)setExtraCellLineHidden: (UITableView *)tableView;
 - (CGFloat)getNaviHeight;
 

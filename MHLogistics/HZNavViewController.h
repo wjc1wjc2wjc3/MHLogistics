@@ -25,5 +25,6 @@ typedef void(^naviRightBlock)(void);
 - (void)setNaviBackgroundColor:(UIColor *)color;
 - (void)showSearch:(naviRightBlock)block;
 - (void)showRightNavi:(BOOL)bShow title:(NSString *)title  block:(naviRightBlock)block;
+- (void)setRightNaviTitle:(NSString *)title;
 - (void)hidebSearch;
 @end

@@ -74,6 +74,12 @@
     _rightBlock = block;
 }
 
+- (void)setRightNaviTitle:(NSString *)title {
+    if (_hzBitNavigationBar) {
+        [_hzBitNavigationBar showRightNavi:YES title:title];
+    }
+}
+
 - (void)hidebSearch {
     if (_hzBitNavigationBar) {
         [_hzBitNavigationBar showSearch:YES];

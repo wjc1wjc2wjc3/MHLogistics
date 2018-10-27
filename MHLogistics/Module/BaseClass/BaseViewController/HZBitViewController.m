@@ -216,6 +216,13 @@ NSInteger const indicatorTag = 1000;
     }
 }
 
+- (void)setRightNaviTitle:(NSString *)title {
+    UINavigationController *naviVC = self.navigationController;
+    if (naviVC) {
+        [(HZNavViewController *)naviVC setRightNaviTitle:title];
+    }
+}
+
 - (MJRefreshHeader *)createFreshHeader:(headerRefreshBlock)block {
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         if (block) {

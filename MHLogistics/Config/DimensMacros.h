@@ -15,7 +15,7 @@
 //主页蓝
 #define MainColor RGB(0xF7, 0xB8, 0x49)
 #define GrayColor RGB(220, 220, 220)
-
+#define HomeGrayColor RGB(231, 231, 231)
 #define BlueColor RGB(0x00, 0xAE, 0xFF)
 
 #define DeepColor RGB(0xF0, 0xF0, 0xF0)

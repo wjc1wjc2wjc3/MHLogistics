@@ -93,7 +93,7 @@
     }
     UIButton *radioBtn = [[UIButton alloc] initWithFrame:CGRectMake(_nextBtn.frame.origin.x, _nextBtn.frame.origin.y - 30 - 40, 40, 40)];
     [radioBtn addTarget:self action:@selector(radioAction:) forControlEvents:UIControlEventTouchUpInside];
-    [radioBtn setImage:[UIImage imageNamed:@"unselected"] forState:UIControlStateNormal];
+    [radioBtn setImage:[UIImage imageNamed:@"btn_uncheck"] forState:UIControlStateNormal];
     radioBtn.bSelected = NO;
     _radioBtn = radioBtn;
     return radioBtn;
@@ -104,7 +104,7 @@
     BOOL bSelected =  button.bSelected;
     bSelected  = !bSelected;
     [_radioBtn setBSelected:bSelected];
-    NSString *iconRes = bSelected ? @"selected" : @"unselected";
+    NSString *iconRes = bSelected ? @"btn_check" : @"btn_uncheck";
     [_radioBtn setImage:[UIImage imageNamed:iconRes] forState:UIControlStateNormal];
     
 }

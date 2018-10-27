@@ -58,8 +58,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PopMenuCell *cell = [PopMenuCell initWithTableView:tableView];
-    PopMenuModel *model = self.dataArray[indexPath.row];
-    cell.textLabel.text = model.title;
+    NSString *title = self.dataArray[indexPath.row];
+    cell.textLabel.text = title;
     return cell;
 }
 
@@ -86,8 +86,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (self.action) {
-        PopMenuModel *model = self.dataArray[indexPath.row];
-        self.action(indexPath.row, model.title);
+        NSString *title = self.dataArray[indexPath.row];
+        self.action(indexPath.row, title);
     }
     [self hide];
 }

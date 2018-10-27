@@ -21,6 +21,7 @@
 "excuted" = "已执行";
 "pleaseAuthenticateFirst" = "账号未认证,请先认证";
 "cancel" = "取消";
+"ok" = "确定";
 "immediateCertification" = "是的，立即认证";
 "dispatcherCertification" = "调度员认证";
 "me" = "我的";
@@ -116,3 +117,16 @@
 "vehicleTon" = "吨位(呎)";
 "vehicleWidthH" = "车长宽高";
 "vehicleCloseRoadPermit" = "封闭道路通行许可证";
+"homeCellTon" = "订车吨位:";
+"homeCellLoadingTime" = "装货时间:";
+"homeCellClearance" = "通关口岸:";
+"homeCellMoney" = "金额:";
+"homeCellLoadingAddress" = "装货地址:";
+"homeCellDischargeAddress" = "卸货地址:";
+"homeCellIgnor" = "忽略";
+"homeCellGrap" = "抢单";
+"ignoreTitle" = "是否真的忽略?";
+"menuAllOrder" = "全部订单";
+"menuExport" = "只看出口";
+"menuImport" = "只看进口";
+"menuIgnore" = "查看已忽略";
