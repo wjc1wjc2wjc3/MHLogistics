@@ -26,5 +26,5 @@ typedef void(^naviRightBlock)(void);
 - (void)showSearch:(naviRightBlock)block;
 - (void)showRightNavi:(BOOL)bShow title:(NSString *)title  block:(naviRightBlock)block;
 - (void)setRightNaviTitle:(NSString *)title;
-- (void)hidebSearch;
+- (void)hideSearch;
 @end

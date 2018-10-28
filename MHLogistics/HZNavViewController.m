@@ -80,7 +80,7 @@
     }
 }
 
-- (void)hidebSearch {
+- (void)hideSearch {
     if (_hzBitNavigationBar) {
         [_hzBitNavigationBar showSearch:YES];
         _rightBlock = nil;

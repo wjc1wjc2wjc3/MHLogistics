@@ -121,6 +121,11 @@
 		18ECD0C82182F46200009D0B /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0C62182F46200009D0B /* PopMenuView.m */; };
 		18ECD0CB2182F4C000009D0B /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0CA2182F4C000009D0B /* PopMenuModel.m */; };
 		18ECD0CE2182FE9600009D0B /* AuthorizeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECD0CD2182FE9600009D0B /* AuthorizeLineView.m */; };
+		3F05AA0521857C3D0041D4A9 /* MHGrapAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05AA0321857C3C0041D4A9 /* MHGrapAlertView.m */; };
+		3F05AA082185BC820041D4A9 /* AssignOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05AA072185BC820041D4A9 /* AssignOrderViewController.m */; };
+		3F05AA0B2185C5260041D4A9 /* AssignCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05AA0A2185C5260041D4A9 /* AssignCell.m */; };
+		3F05AA0E2185DDB90041D4A9 /* AssignVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05AA0D2185DDB90041D4A9 /* AssignVehicleViewController.m */; };
+		3F05AA112185DF580041D4A9 /* AssignVehicleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F05AA102185DF580041D4A9 /* AssignVehicleCell.m */; };
 		3F376B0D218405DB0043A931 /* DispatcherAuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F376B0C218405DB0043A931 /* DispatcherAuthorizeViewController.m */; };
 		3F376B1021840B880043A931 /* VehicleAuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F376B0F21840B880043A931 /* VehicleAuthorizeViewController.m */; };
 		3F376B132184171B0043A931 /* SliderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F376B122184171B0043A931 /* SliderHeaderView.m */; };
@@ -450,6 +455,16 @@
 		18ECD0CA2182F4C000009D0B /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
 		18ECD0CC2182FE9600009D0B /* AuthorizeLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizeLineView.h; sourceTree = "<group>"; };
 		18ECD0CD2182FE9600009D0B /* AuthorizeLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizeLineView.m; sourceTree = "<group>"; };
+		3F05AA0321857C3C0041D4A9 /* MHGrapAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHGrapAlertView.m; sourceTree = "<group>"; };
+		3F05AA0421857C3C0041D4A9 /* MHGrapAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHGrapAlertView.h; sourceTree = "<group>"; };
+		3F05AA062185BC820041D4A9 /* AssignOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssignOrderViewController.h; sourceTree = "<group>"; };
+		3F05AA072185BC820041D4A9 /* AssignOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssignOrderViewController.m; sourceTree = "<group>"; };
+		3F05AA092185C5260041D4A9 /* AssignCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AssignCell.h; path = MHLogistics/Module/Task/ViewController/AssignCell.h; sourceTree = SOURCE_ROOT; };
+		3F05AA0A2185C5260041D4A9 /* AssignCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AssignCell.m; path = MHLogistics/Module/Task/ViewController/AssignCell.m; sourceTree = SOURCE_ROOT; };
+		3F05AA0C2185DDB90041D4A9 /* AssignVehicleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssignVehicleViewController.h; sourceTree = "<group>"; };
+		3F05AA0D2185DDB90041D4A9 /* AssignVehicleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssignVehicleViewController.m; sourceTree = "<group>"; };
+		3F05AA0F2185DF580041D4A9 /* AssignVehicleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AssignVehicleCell.h; path = MHLogistics/Module/Task/ViewController/AssignVehicleCell.h; sourceTree = SOURCE_ROOT; };
+		3F05AA102185DF580041D4A9 /* AssignVehicleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AssignVehicleCell.m; path = MHLogistics/Module/Task/ViewController/AssignVehicleCell.m; sourceTree = SOURCE_ROOT; };
 		3F376B0B218405DB0043A931 /* DispatcherAuthorizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatcherAuthorizeViewController.h; sourceTree = "<group>"; };
 		3F376B0C218405DB0043A931 /* DispatcherAuthorizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatcherAuthorizeViewController.m; sourceTree = "<group>"; };
 		3F376B0E21840B880043A931 /* VehicleAuthorizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleAuthorizeViewController.h; sourceTree = "<group>"; };
@@ -1072,6 +1087,8 @@
 		18CD10D2217EC2E000E2621F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F05AA0421857C3C0041D4A9 /* MHGrapAlertView.h */,
+				3F05AA0321857C3C0041D4A9 /* MHGrapAlertView.m */,
 				18CD111421801B8200E2621F /* DriverCell.h */,
 				18CD111521801B8200E2621F /* DriverCell.m */,
 				3F376B1521845D830043A931 /* HomeCell.h */,
@@ -1216,6 +1233,10 @@
 		18CD10F3217EC7AA00E2621F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F05AA092185C5260041D4A9 /* AssignCell.h */,
+				3F05AA0A2185C5260041D4A9 /* AssignCell.m */,
+				3F05AA0F2185DF580041D4A9 /* AssignVehicleCell.h */,
+				3F05AA102185DF580041D4A9 /* AssignVehicleCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1225,6 +1246,10 @@
 			children = (
 				18CD10F6217EC7B500E2621F /* TaskViewController.h */,
 				18CD10F7217EC7B500E2621F /* TaskViewController.m */,
+				3F05AA062185BC820041D4A9 /* AssignOrderViewController.h */,
+				3F05AA072185BC820041D4A9 /* AssignOrderViewController.m */,
+				3F05AA0C2185DDB90041D4A9 /* AssignVehicleViewController.h */,
+				3F05AA0D2185DDB90041D4A9 /* AssignVehicleViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1499,6 +1524,7 @@
 				18CD1057217EBEF800E2621F /* NSString+UUID.m in Sources */,
 				18CD1051217EBEF800E2621F /* NSDate+String.m in Sources */,
 				18CD10E2217EC34400E2621F /* GTMBase64.m in Sources */,
+				3F05AA0B2185C5260041D4A9 /* AssignCell.m in Sources */,
 				18CD111321801A0B00E2621F /* DriverViewController.m in Sources */,
 				18CD1060217EBEF800E2621F /* UIImage+Rotate.m in Sources */,
 				18CD101B217EBEF200E2621F /* APIManager.m in Sources */,
@@ -1511,6 +1537,7 @@
 				18ECD0A621829DD600009D0B /* VehicleCertificationViewController.m in Sources */,
 				18CD10EB217EC6A500E2621F /* HomeViewController.m in Sources */,
 				18CD1054217EBEF800E2621F /* NSString+Hex.m in Sources */,
+				3F05AA0521857C3D0041D4A9 /* MHGrapAlertView.m in Sources */,
 				18CD10B4217EBF0A00E2621F /* BitTextField.m in Sources */,
 				18CD1017217EBEF200E2621F /* FMDBManager.m in Sources */,
 				3F376B1A218488540043A931 /* HomeData.m in Sources */,
@@ -1528,6 +1555,7 @@
 				18ECD0B82182ED4500009D0B /* DriverAuthorizedViewController.m in Sources */,
 				18CD1053217EBEF800E2621F /* NSMutableArray+JC.m in Sources */,
 				18CD10B9217EBF0A00E2621F /* HZBitPopupCellTableViewCell.m in Sources */,
+				3F05AA082185BC820041D4A9 /* AssignOrderViewController.m in Sources */,
 				18CD10B7217EBF0A00E2621F /* HZBitActivityIndicatorView.m in Sources */,
 				18CD1062217EBEF800E2621F /* UIWindow+HZBitHierarchy.m in Sources */,
 				18CD1091217EBF0400E2621F /* AppUtils.m in Sources */,
@@ -1557,9 +1585,11 @@
 				18CD0F97217EBEEB00E2621F /* HZBitViewController.m in Sources */,
 				18CD11102180164A00E2621F /* AvatarView.m in Sources */,
 				18C87BC52181EE3F00AFC3F4 /* SettingViewController.m in Sources */,
+				3F05AA112185DF580041D4A9 /* AssignVehicleCell.m in Sources */,
 				18CD110A217F01C300E2621F /* LoginDropDown.m in Sources */,
 				18C87BCE2181F6FC00AFC3F4 /* DOperationViewController.m in Sources */,
 				18CD1056217EBEF800E2621F /* NSString+MD5.m in Sources */,
+				3F05AA0E2185DDB90041D4A9 /* AssignVehicleViewController.m in Sources */,
 				18CD0F95217EBEEB00E2621F /* ELockTableAlertView.m in Sources */,
 				18CD1096217EBF0400E2621F /* HZBitRouter.m in Sources */,
 				18CD1098217EBF0400E2621F /* LoginoutUtils.m in Sources */,

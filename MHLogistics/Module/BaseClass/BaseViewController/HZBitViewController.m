@@ -164,7 +164,7 @@ NSInteger const indicatorTag = 1000;
 - (void)hideSearch {
     UINavigationController *naviVC = self.navigationController;
     if (naviVC) {
-        [(HZNavViewController *)naviVC hidebSearch];
+        [(HZNavViewController *)naviVC hideSearch];
     }
 }
 

@@ -45,4 +45,12 @@
     return mainLabel;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    self.rightLabel.center = CGPointMake(self.rightLabel.center.x, self.contentView.frame.size.height*0.5);
+    self.mainLabel.center = CGPointMake(self.mainLabel.center.x, self.contentView.frame.size.height*0.5);
+        DLog(@" %f, %f", self.imageView.center.y, self.contentView.frame.size.height*0.5);
+}
+
 @end

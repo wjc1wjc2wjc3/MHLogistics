@@ -59,4 +59,6 @@
 #define kSearchHeight 50  //搜索栏高度
 #define kSearchPadding 25  //搜索栏水平间距
 #define kManagerHeaderHeight 25  //搜索栏头部高度
+
+#define kSetCellHeight 55.0f
 #endif /* Macro_h */

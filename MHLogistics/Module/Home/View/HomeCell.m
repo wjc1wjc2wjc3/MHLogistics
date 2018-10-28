@@ -22,6 +22,7 @@ CGFloat kHCBtnVericalPadding = 20.0;
 @interface HomeCell()
 
 @property (nonatomic, assign) CGRect baseRect;
+@property (nonatomic, assign) BOOL bBottom;
 
 @end
 
@@ -32,6 +33,19 @@ CGFloat kHCBtnVericalPadding = 20.0;
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.contentView.frame = CGRectMake(0, 0, kScreenWidth, kHCHeight);
+        _bBottom = YES;
+        [self initUI];
+    }
+    return self;
+
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier bottom:(BOOL)bBottom{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.contentView.frame = CGRectMake(0, 0, kScreenWidth, kHCHeight);
+        _bBottom = bBottom;
         [self initUI];
     }
     return self;
@@ -69,8 +83,10 @@ CGFloat kHCBtnVericalPadding = 20.0;
     [self.clearView addSubview:self.dischargeTitleLabel];
     [self.clearView addSubview:self.dischargeLabel];
 
-    [self.clearView addSubview:self.ignoreBtn];
-    [self.clearView addSubview:self.grapOrderBtn];
+    if (_bBottom) {
+        [self.clearView addSubview:self.ignoreBtn];
+        [self.clearView addSubview:self.grapOrderBtn];
+    }
 }
 
 - (UIButton*)ignoreBtn {
@@ -328,6 +344,17 @@ CGFloat kHCBtnVericalPadding = 20.0;
     return _dischargeLabel;
 }
 
+- (void)setIgnoreBtnTitle:(NSString *)title  {
+    if (_ignoreBtn) {
+        [_ignoreBtn setTitle:title forState:UIControlStateNormal];
+    }
+}
+
+- (void)setGrapOrderBtnTitle:(NSString *)title {
+    if (_grapOrderBtn) {
+        [_grapOrderBtn setTitle:title forState:UIControlStateNormal];
+    }
+}
 
 - (UILabel *)dischargeTitleLabel {
     if (_dischargeTitleLabel) {
@@ -409,6 +436,7 @@ CGFloat kHCBtnVericalPadding = 20.0;
     for (NSInteger i = 0; i < 3; i++) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(rect.origin.x + rect.size.width+(kHCHeaderImageHeight+5)*i, rect.origin.y, kHCHeaderImageHeight, kHCHeaderImageHeight)];
         imageView.center = CGPointMake(imageView.center.x, self.licensePlateLabel.center.y);
+        imageView.contentMode = UIViewContentModeCenter;
         [self.baseView addSubview:imageView];
         [_imageViewArray addObject:imageView];
     }

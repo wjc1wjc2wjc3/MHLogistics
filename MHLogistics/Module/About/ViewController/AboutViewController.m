@@ -41,6 +41,9 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     
+    if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        tableView.separatorInset = UIEdgeInsetsZero;
+    }
     _tableView = tableView;
     
     return _tableView;
@@ -80,6 +83,10 @@
 
 #pragma mark
 #pragma mark UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kSetCellHeight;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.section) {
         case 0:
@@ -151,11 +158,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = nil;
-    DLog(@"indexPath.section %ld", indexPath.section);
     switch (indexPath.section) {
         case 0:
         {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"HeaderCell"];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"HeaderCell"];
             UIImage *image = [UIImage imageNamed:@"def_head"];
             cell.imageView.image = image;
             cell.imageView.layer.cornerRadius = image.size.width*0.5;
@@ -172,7 +178,7 @@
         {
             AboutCell *aCell = (AboutCell *)[tableView dequeueReusableCellWithIdentifier:@"AboutCell"];
             if (!aCell) {
-                aCell = (AboutCell *)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"AboutCell"];
+                aCell = (AboutCell *)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"AboutCell"];
             }
             UIImage *image = [UIImage imageNamed:_imageArray[indexPath.row]];
             aCell.imageView.image = image;

@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+
+extern CGFloat kHCCornerRadius;
+extern CGFloat kHCHeaderHeight;
+extern CGFloat kHCHeaderImageHeight;
+extern CGFloat kHCSmallHeight;
+extern CGFloat kHCHeight;
+extern CGFloat kHCLeftPadding;
+extern CGFloat kHCRightPadding;
+extern CGFloat kHCWidgetHorizontalPadding;
+extern CGFloat kHCWidgetVerticalPadding;
+extern CGFloat kHCLabelPadding;
+extern CGFloat kHCBtnVericalPadding;
+
 @protocol HomeDelegate<NSObject>
 
 @optional
@@ -61,5 +74,7 @@ extern CGFloat kHCHeight;
 @property (nonatomic, weak) UIButton *grapOrderBtn;
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier;
-
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier bottom:(BOOL)bBottom;
+- (void)setIgnoreBtnTitle:(NSString *_Nullable)title;
+- (void)setGrapOrderBtnTitle:(NSString *_Nullable)title;
 @end

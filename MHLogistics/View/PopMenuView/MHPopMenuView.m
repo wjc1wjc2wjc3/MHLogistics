@@ -51,7 +51,7 @@ static CGFloat const kCellHeight = 40;
         
         
         // 创建tableView
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - width - 5, point.y + 10, width, kCellHeight * (array.count+1)) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - width - 5, point.y + 10, width, kCellHeight * array.count) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.layer.masksToBounds = YES;
@@ -152,23 +152,6 @@ static CGFloat const kCellHeight = 40;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsZero;
     return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 40;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *sectionHeader = [UIView new];
-    sectionHeader.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 0);
-    UILabel *sectionName = [UILabel new];
-    [sectionHeader addSubview:sectionName];
-    sectionName.frame = CGRectMake(15, 15, 100, 20);
-    sectionName.text = @"所属项目";
-    sectionName.font = [UIFont systemFontOfSize:12];
-    sectionHeader.backgroundColor = UIColor.whiteColor;
-    sectionHeader.tag = 1000;
-    return sectionHeader;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

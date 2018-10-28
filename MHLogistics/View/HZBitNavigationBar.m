@@ -129,9 +129,10 @@ typedef NS_OPTIONS(NSUInteger, eRightType) {
             [_rightButton setHidden:!bShow];
             if (_rbRect.origin.x == 0) {
                 _rbRect = _rightButton.frame;
+                _rightButton.frame = CGRectMake(_rbRect.origin.x, _rbRect.origin.y, CGRectGetWidth(_rbRect) * 2, CGRectGetHeight(_rbRect));
             }
 
-            _rightButton.frame = CGRectMake(_rbRect.origin.x, _rbRect.origin.y, CGRectGetWidth(_rbRect) * 2, CGRectGetHeight(_rbRect));
+
             [_rightButton setTitle:title forState:UIControlStateNormal];
 //            [_rightButton setImage:_rightItem forState:UIControlStateNormal];
 //            [_rightButton.titleLabel setFont:[UIFont systemFontOfSize:15.0]];

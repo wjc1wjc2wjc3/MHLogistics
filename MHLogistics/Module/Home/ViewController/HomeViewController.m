@@ -12,6 +12,7 @@
 #import "HomeData.h"
 #import "PopMenuModel.h"
 #import "MHPopMenuView.h"
+#import "MHGrapAlertView.h"
 
 NSString *const kTabbarSelectChange = @"TabbarSelectChange";
 
@@ -20,7 +21,8 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
 @property (nonatomic,weak) SliderHeaderView *shView;
 @property (nonatomic, weak) UIScrollView *scrollView;
 @property (nonatomic, strong) NSArray *titleArray;
-@property (nonatomic, strong) NSMutableArray *pageArray;
+@property (nonatomic, assign) NSUInteger curPageIdx;
+@property (nonatomic, strong) NSMutableArray *pageViewArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) NSMutableArray *cardTypeImageArray;
 @property (nonatomic, strong) NSArray *menuTitleArray;
@@ -39,7 +41,7 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
         hd.licenseP = @"CK12372";
         hd.timeNow = @"今天 08:30";
         hd.distance = @"67KM";
-        hd.ton = @"8吨";
+        hd.ton = [NSString stringWithFormat:@"%lu吨", i + 10];
         hd.loading = @"上午 10:00";
         hd.clearance = @"深圳福田口岸";
         hd.money = @"3610 HK";
@@ -48,6 +50,7 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
         hd.typeArray = [self randomNumArray];
         [self.dataArray addObject:hd];
     }
+    _curPageIdx = 0;
     [self.view addSubview:self.scrollView];
 }
 
@@ -93,11 +96,11 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
     }
     
     _titleArray = @[LOCALIZEDSTRING(@"today"), LOCALIZEDSTRING(@"reserve")];
-    _pageArray = [NSMutableArray arrayWithCapacity:_titleArray.count];
+    _pageViewArray = [NSMutableArray arrayWithCapacity:_titleArray.count];
 
     SliderHeaderView *shView = [[SliderHeaderView alloc] initWithFrame:CGRectMake(0, 80, kScreenWidth, 40) array:_titleArray];
     shView.block = ^(NSUInteger tag) {
-        
+        self->_curPageIdx = tag;
     };
     _shView = shView;
     
@@ -128,7 +131,7 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [scrollView addSubview:tableView];
         [tableView reloadData];
-        [_pageArray addObject:tableView];
+        [_pageViewArray addObject:tableView];
     }
     
     [self.view addSubview:scrollView];
@@ -225,7 +228,7 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
 - (void)ignoreOP:(NSIndexPath*)idxP {
     UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"" message:LOCALIZEDSTRING(@"ignoreTitle") preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"ok") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        [self removeCell:idxP];
     }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:LOCALIZEDSTRING(@"cancel") style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
@@ -235,8 +238,31 @@ NSString *const kTabbarSelectChange = @"TabbarSelectChange";
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (void)removeCell:(NSIndexPath *)indexPath {
+    switch (_curPageIdx) {
+        case 0:
+        {
+            UITableView *tableView = _pageViewArray[_curPageIdx];
+            if (tableView) {
+                DLog(@"removeCell %ld", (long)indexPath.row);
+                [_dataArray removeObjectAtIndex:indexPath.row];
+                [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
+            }
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
 - (void)grapOrderOP:(NSIndexPath *)idxP {
-    
+    HomeData *hd = _dataArray[idxP.row];
+    if (hd) {
+        [MHGrapAlertView showGrapWithData:hd grapBlock:^{
+            DLog(@"grapOrderOP");
+        }];
+    }
 }
 
 @end

@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *distance;
 @property (nonatomic, copy) NSString *timeNow;
 @property (nonatomic, strong) NSMutableArray *typeArray;
+@property (nonatomic, strong) NSMutableArray *typeResArray;
 
 @property (nonatomic, copy) NSString *ton;
 @property (nonatomic, copy) NSString *loading;
