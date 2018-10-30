@@ -14,8 +14,4 @@
     return [NSString stringWithFormat:@"%@%@", URI_REQUEST, funcName];
 }
 
-- (NSString *)payFormatUrl:(NSString *)funcName {
-    return [NSString stringWithFormat:@"%@%@", PAY_URI_REQUEST, funcName];
-}
-
 @end

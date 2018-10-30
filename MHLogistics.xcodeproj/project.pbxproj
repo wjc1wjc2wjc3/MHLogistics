@@ -8,6 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		1514F1D6E7F149435FA0F5D1 /* Pods_MHLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156B1046D7EBB0BB7BF6F253 /* Pods_MHLogistics.framework */; };
+		1842D9B421886D4200D14CD1 /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9B321886D4200D14CD1 /* RegisterModel.m */; };
+		1842D9B721886DCE00D14CD1 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9B621886DCE00D14CD1 /* LoginModel.m */; };
+		1842D9BA21886DE600D14CD1 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9B921886DE600D14CD1 /* LoginViewModel.m */; };
+		1842D9BD21886DFD00D14CD1 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9BC21886DFD00D14CD1 /* RegisterViewModel.m */; };
+		1842D9C021886F2F00D14CD1 /* RegisterDeviceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9BF21886F2F00D14CD1 /* RegisterDeviceData.m */; };
+		1842D9C72188701E00D14CD1 /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9C62188701E00D14CD1 /* BaseData.m */; };
+		1842D9CD218871AE00D14CD1 /* BaseRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9CC218871AE00D14CD1 /* BaseRequestResult.m */; };
+		1842D9D02188723A00D14CD1 /* RegisterResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9CF2188723A00D14CD1 /* RegisterResultData.m */; };
+		1842D9D3218872E400D14CD1 /* QueryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9D2218872E400D14CD1 /* QueryModel.m */; };
+		1842D9D62188730200D14CD1 /* QueryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9D52188730200D14CD1 /* QueryViewModel.m */; };
+		1842D9D92188737200D14CD1 /* LoginResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9D82188737200D14CD1 /* LoginResultData.m */; };
+		1842D9DC2188739200D14CD1 /* QueryResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9DB2188739200D14CD1 /* QueryResultData.m */; };
+		1842D9E5218874D200D14CD1 /* UploadDDYAuthInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9E4218874D200D14CD1 /* UploadDDYAuthInfoModel.m */; };
+		1842D9E8218874F200D14CD1 /* UploadDDYAuthInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9E7218874F200D14CD1 /* UploadDDYAuthInfoViewModel.m */; };
+		1842D9EB2188755700D14CD1 /* UploadDTAuthInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9EA2188755700D14CD1 /* UploadDTAuthInfoViewModel.m */; };
+		1842D9EE218875AC00D14CD1 /* UploadDTAuthInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9ED218875AC00D14CD1 /* UploadDTAuthInfoModel.m */; };
+		1842D9F1218875DF00D14CD1 /* UploadHKSJAuthInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9F0218875DF00D14CD1 /* UploadHKSJAuthInfoModel.m */; };
+		1842D9F42188762400D14CD1 /* UploadHKSJAuthInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9F32188762400D14CD1 /* UploadHKSJAuthInfoViewModel.m */; };
+		1842D9F7218876A600D14CD1 /* UploadHKSJAuthInfoResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9F6218876A600D14CD1 /* UploadHKSJAuthInfoResultData.m */; };
+		1842D9FA218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9F9218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.m */; };
+		1842D9FD2188772400D14CD1 /* UploadDLSJAuthInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9FC2188772400D14CD1 /* UploadDLSJAuthInfoModel.m */; };
+		1842DA002188774900D14CD1 /* UploadDLSJAuthInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842D9FF2188774900D14CD1 /* UploadDLSJAuthInfoViewModel.m */; };
+		1842DA032188779100D14CD1 /* UploadUserAuthPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA022188779100D14CD1 /* UploadUserAuthPhotoModel.m */; };
+		1842DA06218877A000D14CD1 /* UploadUserAuthPhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA05218877A000D14CD1 /* UploadUserAuthPhotoViewModel.m */; };
+		1842DA09218877E900D14CD1 /* GetUserAuthInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA08218877E900D14CD1 /* GetUserAuthInfoViewModel.m */; };
+		1842DA0F2188788700D14CD1 /* GetUserAuthInfoResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA0E2188788700D14CD1 /* GetUserAuthInfoResultData.m */; };
+		1842DA1221887B7300D14CD1 /* UploadZBCarAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA1121887B7300D14CD1 /* UploadZBCarAuthModel.m */; };
+		1842DA1521887C3300D14CD1 /* UploadZBCarAuthViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA1421887C3300D14CD1 /* UploadZBCarAuthViewModel.m */; };
+		1842DA1821887C9000D14CD1 /* UploadZBCarAuthResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA1721887C9000D14CD1 /* UploadZBCarAuthResultData.m */; };
+		1842DA1B21887D1000D14CD1 /* UploadDWCarAuthResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA1A21887D1000D14CD1 /* UploadDWCarAuthResultData.m */; };
+		1842DA1E21887D3500D14CD1 /* UploadDWCarAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA1D21887D3500D14CD1 /* UploadDWCarAuthModel.m */; };
+		1842DA2121887D4A00D14CD1 /* UploadDWCarAuthViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA2021887D4A00D14CD1 /* UploadDWCarAuthViewModel.m */; };
+		1842DA2421887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA2321887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.m */; };
+		1842DA2721887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA2621887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.m */; };
+		1842DA2A21887E3D00D14CD1 /* DelDDYCarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA2921887E3D00D14CD1 /* DelDDYCarViewModel.m */; };
+		1842DA2D21887E6D00D14CD1 /* DelDDYCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA2C21887E6D00D14CD1 /* DelDDYCarModel.m */; };
+		1842DA3021887E8F00D14CD1 /* GetAllCarMgrInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA2F21887E8F00D14CD1 /* GetAllCarMgrInfoModel.m */; };
+		1842DA3321887EA700D14CD1 /* GetAllCarMgrInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA3221887EA700D14CD1 /* GetAllCarMgrInfoViewModel.m */; };
+		1842DA3621887EDA00D14CD1 /* GetAllCarMgrInfoResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA3521887EDA00D14CD1 /* GetAllCarMgrInfoResultData.m */; };
+		1842DA3921887EFC00D14CD1 /* GetAllDDYSjInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA3821887EFC00D14CD1 /* GetAllDDYSjInfoModel.m */; };
+		1842DA3C21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA3B21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.m */; };
+		1842DA3F21887F5800D14CD1 /* GetAllDDYSjInfoResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA3E21887F5800D14CD1 /* GetAllDDYSjInfoResultData.m */; };
+		1842DA422188805700D14CD1 /* GetDDYOneSJInfoResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA412188805700D14CD1 /* GetDDYOneSJInfoResultData.m */; };
+		1842DA452188806E00D14CD1 /* GetDDYOneSJInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA442188806E00D14CD1 /* GetDDYOneSJInfoModel.m */; };
+		1842DA482188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA472188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m */; };
+		1842DA4B218880EB00D14CD1 /* DelDDYOneSJInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA4A218880EB00D14CD1 /* DelDDYOneSJInfoModel.m */; };
+		1842DA4E218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA4D218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m */; };
 		18C87BC52181EE3F00AFC3F4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */; };
 		18C87BC82181EE8B00AFC3F4 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BC72181EE8B00AFC3F4 /* SettingCell.m */; };
 		18C87BCB2181F34200AFC3F4 /* NewPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BCA2181F34200AFC3F4 /* NewPWDViewController.m */; };
@@ -95,7 +142,6 @@
 		18CD10BE217EC21600E2621F /* HZNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10BC217EC21600E2621F /* HZNavViewController.m */; };
 		18CD10DD217EC30000E2621F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10DC217EC30000E2621F /* LoginViewController.m */; };
 		18CD10E2217EC34400E2621F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10E0217EC34400E2621F /* GTMBase64.m */; };
-		18CD10E5217EC36D00E2621F /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10E4217EC36D00E2621F /* LoginViewModel.m */; };
 		18CD10E8217EC64F00E2621F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10E7217EC64F00E2621F /* MainViewController.m */; };
 		18CD10EB217EC6A500E2621F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10EA217EC6A500E2621F /* HomeViewController.m */; };
 		18CD10EE217EC6CE00E2621F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD10ED217EC6CE00E2621F /* AboutViewController.m */; };
@@ -155,6 +201,100 @@
 
 /* Begin PBXFileReference section */
 		156B1046D7EBB0BB7BF6F253 /* Pods_MHLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1842D9B221886D4200D14CD1 /* RegisterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterModel.h; sourceTree = "<group>"; };
+		1842D9B321886D4200D14CD1 /* RegisterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = "<group>"; };
+		1842D9B521886DCE00D14CD1 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		1842D9B621886DCE00D14CD1 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		1842D9B821886DE600D14CD1 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		1842D9B921886DE600D14CD1 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		1842D9BB21886DFD00D14CD1 /* RegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		1842D9BC21886DFD00D14CD1 /* RegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		1842D9BE21886F2F00D14CD1 /* RegisterDeviceData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterDeviceData.h; sourceTree = "<group>"; };
+		1842D9BF21886F2F00D14CD1 /* RegisterDeviceData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterDeviceData.m; sourceTree = "<group>"; };
+		1842D9C52188701E00D14CD1 /* BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseData.h; sourceTree = "<group>"; };
+		1842D9C62188701E00D14CD1 /* BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseData.m; sourceTree = "<group>"; };
+		1842D9CB218871AD00D14CD1 /* BaseRequestResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestResult.h; sourceTree = "<group>"; };
+		1842D9CC218871AE00D14CD1 /* BaseRequestResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequestResult.m; sourceTree = "<group>"; };
+		1842D9CE2188723A00D14CD1 /* RegisterResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterResultData.h; sourceTree = "<group>"; };
+		1842D9CF2188723A00D14CD1 /* RegisterResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterResultData.m; sourceTree = "<group>"; };
+		1842D9D1218872E400D14CD1 /* QueryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryModel.h; sourceTree = "<group>"; };
+		1842D9D2218872E400D14CD1 /* QueryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryModel.m; sourceTree = "<group>"; };
+		1842D9D42188730200D14CD1 /* QueryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryViewModel.h; sourceTree = "<group>"; };
+		1842D9D52188730200D14CD1 /* QueryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryViewModel.m; sourceTree = "<group>"; };
+		1842D9D72188737200D14CD1 /* LoginResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResultData.h; sourceTree = "<group>"; };
+		1842D9D82188737200D14CD1 /* LoginResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResultData.m; sourceTree = "<group>"; };
+		1842D9DA2188739200D14CD1 /* QueryResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryResultData.h; sourceTree = "<group>"; };
+		1842D9DB2188739200D14CD1 /* QueryResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryResultData.m; sourceTree = "<group>"; };
+		1842D9E3218874D200D14CD1 /* UploadDDYAuthInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadDDYAuthInfoModel.h; sourceTree = "<group>"; };
+		1842D9E4218874D200D14CD1 /* UploadDDYAuthInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadDDYAuthInfoModel.m; sourceTree = "<group>"; };
+		1842D9E6218874F200D14CD1 /* UploadDDYAuthInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDDYAuthInfoViewModel.h; sourceTree = "<group>"; };
+		1842D9E7218874F200D14CD1 /* UploadDDYAuthInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDDYAuthInfoViewModel.m; sourceTree = "<group>"; };
+		1842D9E92188755700D14CD1 /* UploadDTAuthInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDTAuthInfoViewModel.h; sourceTree = "<group>"; };
+		1842D9EA2188755700D14CD1 /* UploadDTAuthInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDTAuthInfoViewModel.m; sourceTree = "<group>"; };
+		1842D9EC218875AC00D14CD1 /* UploadDTAuthInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDTAuthInfoModel.h; sourceTree = "<group>"; };
+		1842D9ED218875AC00D14CD1 /* UploadDTAuthInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDTAuthInfoModel.m; sourceTree = "<group>"; };
+		1842D9EF218875DF00D14CD1 /* UploadHKSJAuthInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadHKSJAuthInfoModel.h; sourceTree = "<group>"; };
+		1842D9F0218875DF00D14CD1 /* UploadHKSJAuthInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadHKSJAuthInfoModel.m; sourceTree = "<group>"; };
+		1842D9F22188762400D14CD1 /* UploadHKSJAuthInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadHKSJAuthInfoViewModel.h; sourceTree = "<group>"; };
+		1842D9F32188762400D14CD1 /* UploadHKSJAuthInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadHKSJAuthInfoViewModel.m; sourceTree = "<group>"; };
+		1842D9F5218876A600D14CD1 /* UploadHKSJAuthInfoResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadHKSJAuthInfoResultData.h; sourceTree = "<group>"; };
+		1842D9F6218876A600D14CD1 /* UploadHKSJAuthInfoResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadHKSJAuthInfoResultData.m; sourceTree = "<group>"; };
+		1842D9F8218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDLSJAuthInfoResultData.h; sourceTree = "<group>"; };
+		1842D9F9218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDLSJAuthInfoResultData.m; sourceTree = "<group>"; };
+		1842D9FB2188772400D14CD1 /* UploadDLSJAuthInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDLSJAuthInfoModel.h; sourceTree = "<group>"; };
+		1842D9FC2188772400D14CD1 /* UploadDLSJAuthInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDLSJAuthInfoModel.m; sourceTree = "<group>"; };
+		1842D9FE2188774900D14CD1 /* UploadDLSJAuthInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDLSJAuthInfoViewModel.h; sourceTree = "<group>"; };
+		1842D9FF2188774900D14CD1 /* UploadDLSJAuthInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDLSJAuthInfoViewModel.m; sourceTree = "<group>"; };
+		1842DA012188779100D14CD1 /* UploadUserAuthPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadUserAuthPhotoModel.h; sourceTree = "<group>"; };
+		1842DA022188779100D14CD1 /* UploadUserAuthPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadUserAuthPhotoModel.m; sourceTree = "<group>"; };
+		1842DA04218877A000D14CD1 /* UploadUserAuthPhotoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadUserAuthPhotoViewModel.h; sourceTree = "<group>"; };
+		1842DA05218877A000D14CD1 /* UploadUserAuthPhotoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadUserAuthPhotoViewModel.m; sourceTree = "<group>"; };
+		1842DA07218877E900D14CD1 /* GetUserAuthInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUserAuthInfoViewModel.h; sourceTree = "<group>"; };
+		1842DA08218877E900D14CD1 /* GetUserAuthInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUserAuthInfoViewModel.m; sourceTree = "<group>"; };
+		1842DA0D2188788700D14CD1 /* GetUserAuthInfoResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUserAuthInfoResultData.h; sourceTree = "<group>"; };
+		1842DA0E2188788700D14CD1 /* GetUserAuthInfoResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUserAuthInfoResultData.m; sourceTree = "<group>"; };
+		1842DA1021887B7300D14CD1 /* UploadZBCarAuthModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadZBCarAuthModel.h; sourceTree = "<group>"; };
+		1842DA1121887B7300D14CD1 /* UploadZBCarAuthModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadZBCarAuthModel.m; sourceTree = "<group>"; };
+		1842DA1321887C3300D14CD1 /* UploadZBCarAuthViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadZBCarAuthViewModel.h; sourceTree = "<group>"; };
+		1842DA1421887C3300D14CD1 /* UploadZBCarAuthViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadZBCarAuthViewModel.m; sourceTree = "<group>"; };
+		1842DA1621887C9000D14CD1 /* UploadZBCarAuthResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadZBCarAuthResultData.h; sourceTree = "<group>"; };
+		1842DA1721887C9000D14CD1 /* UploadZBCarAuthResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadZBCarAuthResultData.m; sourceTree = "<group>"; };
+		1842DA1921887D1000D14CD1 /* UploadDWCarAuthResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDWCarAuthResultData.h; sourceTree = "<group>"; };
+		1842DA1A21887D1000D14CD1 /* UploadDWCarAuthResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDWCarAuthResultData.m; sourceTree = "<group>"; };
+		1842DA1C21887D3500D14CD1 /* UploadDWCarAuthModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDWCarAuthModel.h; sourceTree = "<group>"; };
+		1842DA1D21887D3500D14CD1 /* UploadDWCarAuthModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDWCarAuthModel.m; sourceTree = "<group>"; };
+		1842DA1F21887D4A00D14CD1 /* UploadDWCarAuthViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadDWCarAuthViewModel.h; sourceTree = "<group>"; };
+		1842DA2021887D4A00D14CD1 /* UploadDWCarAuthViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadDWCarAuthViewModel.m; sourceTree = "<group>"; };
+		1842DA2221887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadCarMgrTLPhotoModel.h; sourceTree = "<group>"; };
+		1842DA2321887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadCarMgrTLPhotoModel.m; sourceTree = "<group>"; };
+		1842DA2521887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadCarMgrTLPhotoViewModel.h; sourceTree = "<group>"; };
+		1842DA2621887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadCarMgrTLPhotoViewModel.m; sourceTree = "<group>"; };
+		1842DA2821887E3D00D14CD1 /* DelDDYCarViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelDDYCarViewModel.h; sourceTree = "<group>"; };
+		1842DA2921887E3D00D14CD1 /* DelDDYCarViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelDDYCarViewModel.m; sourceTree = "<group>"; };
+		1842DA2B21887E6D00D14CD1 /* DelDDYCarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelDDYCarModel.h; sourceTree = "<group>"; };
+		1842DA2C21887E6D00D14CD1 /* DelDDYCarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelDDYCarModel.m; sourceTree = "<group>"; };
+		1842DA2E21887E8F00D14CD1 /* GetAllCarMgrInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAllCarMgrInfoModel.h; sourceTree = "<group>"; };
+		1842DA2F21887E8F00D14CD1 /* GetAllCarMgrInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAllCarMgrInfoModel.m; sourceTree = "<group>"; };
+		1842DA3121887EA700D14CD1 /* GetAllCarMgrInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAllCarMgrInfoViewModel.h; sourceTree = "<group>"; };
+		1842DA3221887EA700D14CD1 /* GetAllCarMgrInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAllCarMgrInfoViewModel.m; sourceTree = "<group>"; };
+		1842DA3421887EDA00D14CD1 /* GetAllCarMgrInfoResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAllCarMgrInfoResultData.h; sourceTree = "<group>"; };
+		1842DA3521887EDA00D14CD1 /* GetAllCarMgrInfoResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAllCarMgrInfoResultData.m; sourceTree = "<group>"; };
+		1842DA3721887EFC00D14CD1 /* GetAllDDYSjInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAllDDYSjInfoModel.h; sourceTree = "<group>"; };
+		1842DA3821887EFC00D14CD1 /* GetAllDDYSjInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAllDDYSjInfoModel.m; sourceTree = "<group>"; };
+		1842DA3A21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAllDDYSjInfoViewModel.h; sourceTree = "<group>"; };
+		1842DA3B21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAllDDYSjInfoViewModel.m; sourceTree = "<group>"; };
+		1842DA3D21887F5800D14CD1 /* GetAllDDYSjInfoResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAllDDYSjInfoResultData.h; sourceTree = "<group>"; };
+		1842DA3E21887F5800D14CD1 /* GetAllDDYSjInfoResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAllDDYSjInfoResultData.m; sourceTree = "<group>"; };
+		1842DA402188805700D14CD1 /* GetDDYOneSJInfoResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDDYOneSJInfoResultData.h; sourceTree = "<group>"; };
+		1842DA412188805700D14CD1 /* GetDDYOneSJInfoResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDDYOneSJInfoResultData.m; sourceTree = "<group>"; };
+		1842DA432188806E00D14CD1 /* GetDDYOneSJInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDDYOneSJInfoModel.h; sourceTree = "<group>"; };
+		1842DA442188806E00D14CD1 /* GetDDYOneSJInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDDYOneSJInfoModel.m; sourceTree = "<group>"; };
+		1842DA462188807E00D14CD1 /* GetDDYOneSJInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetDDYOneSJInfoViewModel.h; sourceTree = "<group>"; };
+		1842DA472188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDDYOneSJInfoViewModel.m; sourceTree = "<group>"; };
+		1842DA49218880EB00D14CD1 /* DelDDYOneSJInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelDDYOneSJInfoModel.h; sourceTree = "<group>"; };
+		1842DA4A218880EB00D14CD1 /* DelDDYOneSJInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelDDYOneSJInfoModel.m; sourceTree = "<group>"; };
+		1842DA4C218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelDDYOneSJInfoViewModel.h; sourceTree = "<group>"; };
+		1842DA4D218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelDDYOneSJInfoViewModel.m; sourceTree = "<group>"; };
 		18C87BC32181EE3F00AFC3F4 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		18C87BC62181EE8B00AFC3F4 /* SettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
@@ -406,8 +546,6 @@
 		18CD10DF217EC34400E2621F /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		18CD10E0217EC34400E2621F /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		18CD10E1217EC34400E2621F /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		18CD10E3217EC36D00E2621F /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
-		18CD10E4217EC36D00E2621F /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		18CD10E6217EC64F00E2621F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		18CD10E7217EC64F00E2621F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		18CD10E9217EC6A500E2621F /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -516,6 +654,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1842D9C42188701E00D14CD1 /* BaseData */ = {
+			isa = PBXGroup;
+			children = (
+				1842D9C52188701E00D14CD1 /* BaseData.h */,
+				1842D9C62188701E00D14CD1 /* BaseData.m */,
+				1842D9CB218871AD00D14CD1 /* BaseRequestResult.h */,
+				1842D9CC218871AE00D14CD1 /* BaseRequestResult.m */,
+			);
+			path = BaseData;
+			sourceTree = "<group>";
+		};
 		18CD0F3F217EBA0100E2621F = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +760,7 @@
 		18CD0F85217EBEEB00E2621F /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				1842D9C42188701E00D14CD1 /* BaseData */,
 				18CD0F86217EBEEB00E2621F /* BaseModel */,
 				18CD0F89217EBEEB00E2621F /* BaseView */,
 				18CD0F8E217EBEEB00E2621F /* BaseViewController */,
@@ -973,6 +1123,14 @@
 			children = (
 				18CD10FD217ED0B400E2621F /* UserInfo.h */,
 				18CD10FE217ED0B400E2621F /* UserInfo.m */,
+				1842D9BE21886F2F00D14CD1 /* RegisterDeviceData.h */,
+				1842D9BF21886F2F00D14CD1 /* RegisterDeviceData.m */,
+				1842D9CE2188723A00D14CD1 /* RegisterResultData.h */,
+				1842D9CF2188723A00D14CD1 /* RegisterResultData.m */,
+				1842D9D72188737200D14CD1 /* LoginResultData.h */,
+				1842D9D82188737200D14CD1 /* LoginResultData.m */,
+				1842D9DA2188739200D14CD1 /* QueryResultData.h */,
+				1842D9DB2188739200D14CD1 /* QueryResultData.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -980,8 +1138,12 @@
 		18CD10C5217EC2E000E2621F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				18CD10E3217EC36D00E2621F /* LoginViewModel.h */,
-				18CD10E4217EC36D00E2621F /* LoginViewModel.m */,
+				1842D9B221886D4200D14CD1 /* RegisterModel.h */,
+				1842D9B321886D4200D14CD1 /* RegisterModel.m */,
+				1842D9B521886DCE00D14CD1 /* LoginModel.h */,
+				1842D9B621886DCE00D14CD1 /* LoginModel.m */,
+				1842D9D1218872E400D14CD1 /* QueryModel.h */,
+				1842D9D2218872E400D14CD1 /* QueryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1005,6 +1167,12 @@
 		18CD10C8217EC2E000E2621F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1842D9B821886DE600D14CD1 /* LoginViewModel.h */,
+				1842D9B921886DE600D14CD1 /* LoginViewModel.m */,
+				1842D9BB21886DFD00D14CD1 /* RegisterViewModel.h */,
+				1842D9BC21886DFD00D14CD1 /* RegisterViewModel.m */,
+				1842D9D42188730200D14CD1 /* QueryViewModel.h */,
+				1842D9D52188730200D14CD1 /* QueryViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1132,6 +1300,22 @@
 			children = (
 				18ECD0AD2182B6A800009D0B /* VehicleMgrInfo.h */,
 				18ECD0AE2182B6A800009D0B /* VehicleMgrInfo.m */,
+				1842D9F5218876A600D14CD1 /* UploadHKSJAuthInfoResultData.h */,
+				1842D9F6218876A600D14CD1 /* UploadHKSJAuthInfoResultData.m */,
+				1842D9F8218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.h */,
+				1842D9F9218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.m */,
+				1842DA0D2188788700D14CD1 /* GetUserAuthInfoResultData.h */,
+				1842DA0E2188788700D14CD1 /* GetUserAuthInfoResultData.m */,
+				1842DA1621887C9000D14CD1 /* UploadZBCarAuthResultData.h */,
+				1842DA1721887C9000D14CD1 /* UploadZBCarAuthResultData.m */,
+				1842DA1921887D1000D14CD1 /* UploadDWCarAuthResultData.h */,
+				1842DA1A21887D1000D14CD1 /* UploadDWCarAuthResultData.m */,
+				1842DA3421887EDA00D14CD1 /* GetAllCarMgrInfoResultData.h */,
+				1842DA3521887EDA00D14CD1 /* GetAllCarMgrInfoResultData.m */,
+				1842DA3D21887F5800D14CD1 /* GetAllDDYSjInfoResultData.h */,
+				1842DA3E21887F5800D14CD1 /* GetAllDDYSjInfoResultData.m */,
+				1842DA402188805700D14CD1 /* GetDDYOneSJInfoResultData.h */,
+				1842DA412188805700D14CD1 /* GetDDYOneSJInfoResultData.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1139,6 +1323,32 @@
 		18CD10D7217EC2E000E2621F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1842D9E3218874D200D14CD1 /* UploadDDYAuthInfoModel.h */,
+				1842D9E4218874D200D14CD1 /* UploadDDYAuthInfoModel.m */,
+				1842D9EC218875AC00D14CD1 /* UploadDTAuthInfoModel.h */,
+				1842D9ED218875AC00D14CD1 /* UploadDTAuthInfoModel.m */,
+				1842D9EF218875DF00D14CD1 /* UploadHKSJAuthInfoModel.h */,
+				1842D9F0218875DF00D14CD1 /* UploadHKSJAuthInfoModel.m */,
+				1842D9FB2188772400D14CD1 /* UploadDLSJAuthInfoModel.h */,
+				1842D9FC2188772400D14CD1 /* UploadDLSJAuthInfoModel.m */,
+				1842DA012188779100D14CD1 /* UploadUserAuthPhotoModel.h */,
+				1842DA022188779100D14CD1 /* UploadUserAuthPhotoModel.m */,
+				1842DA1021887B7300D14CD1 /* UploadZBCarAuthModel.h */,
+				1842DA1121887B7300D14CD1 /* UploadZBCarAuthModel.m */,
+				1842DA1C21887D3500D14CD1 /* UploadDWCarAuthModel.h */,
+				1842DA1D21887D3500D14CD1 /* UploadDWCarAuthModel.m */,
+				1842DA2221887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.h */,
+				1842DA2321887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.m */,
+				1842DA2B21887E6D00D14CD1 /* DelDDYCarModel.h */,
+				1842DA2C21887E6D00D14CD1 /* DelDDYCarModel.m */,
+				1842DA2E21887E8F00D14CD1 /* GetAllCarMgrInfoModel.h */,
+				1842DA2F21887E8F00D14CD1 /* GetAllCarMgrInfoModel.m */,
+				1842DA3721887EFC00D14CD1 /* GetAllDDYSjInfoModel.h */,
+				1842DA3821887EFC00D14CD1 /* GetAllDDYSjInfoModel.m */,
+				1842DA432188806E00D14CD1 /* GetDDYOneSJInfoModel.h */,
+				1842DA442188806E00D14CD1 /* GetDDYOneSJInfoModel.m */,
+				1842DA49218880EB00D14CD1 /* DelDDYOneSJInfoModel.h */,
+				1842DA4A218880EB00D14CD1 /* DelDDYOneSJInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1190,6 +1400,34 @@
 		18CD10DA217EC2E000E2621F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1842D9E6218874F200D14CD1 /* UploadDDYAuthInfoViewModel.h */,
+				1842D9E7218874F200D14CD1 /* UploadDDYAuthInfoViewModel.m */,
+				1842D9E92188755700D14CD1 /* UploadDTAuthInfoViewModel.h */,
+				1842D9EA2188755700D14CD1 /* UploadDTAuthInfoViewModel.m */,
+				1842D9F22188762400D14CD1 /* UploadHKSJAuthInfoViewModel.h */,
+				1842D9F32188762400D14CD1 /* UploadHKSJAuthInfoViewModel.m */,
+				1842D9FE2188774900D14CD1 /* UploadDLSJAuthInfoViewModel.h */,
+				1842D9FF2188774900D14CD1 /* UploadDLSJAuthInfoViewModel.m */,
+				1842DA04218877A000D14CD1 /* UploadUserAuthPhotoViewModel.h */,
+				1842DA05218877A000D14CD1 /* UploadUserAuthPhotoViewModel.m */,
+				1842DA07218877E900D14CD1 /* GetUserAuthInfoViewModel.h */,
+				1842DA08218877E900D14CD1 /* GetUserAuthInfoViewModel.m */,
+				1842DA1321887C3300D14CD1 /* UploadZBCarAuthViewModel.h */,
+				1842DA1421887C3300D14CD1 /* UploadZBCarAuthViewModel.m */,
+				1842DA1F21887D4A00D14CD1 /* UploadDWCarAuthViewModel.h */,
+				1842DA2021887D4A00D14CD1 /* UploadDWCarAuthViewModel.m */,
+				1842DA2521887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.h */,
+				1842DA2621887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.m */,
+				1842DA2821887E3D00D14CD1 /* DelDDYCarViewModel.h */,
+				1842DA2921887E3D00D14CD1 /* DelDDYCarViewModel.m */,
+				1842DA3121887EA700D14CD1 /* GetAllCarMgrInfoViewModel.h */,
+				1842DA3221887EA700D14CD1 /* GetAllCarMgrInfoViewModel.m */,
+				1842DA3A21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.h */,
+				1842DA3B21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.m */,
+				1842DA462188807E00D14CD1 /* GetDDYOneSJInfoViewModel.h */,
+				1842DA472188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m */,
+				1842DA4C218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.h */,
+				1842DA4D218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1502,16 +1740,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1842DA3921887EFC00D14CD1 /* GetAllDDYSjInfoModel.m in Sources */,
 				18CD1052217EBEF800E2621F /* NSDictionary+JSONString.m in Sources */,
+				1842DA0F2188788700D14CD1 /* GetUserAuthInfoResultData.m in Sources */,
 				18CD10F8217EC7B500E2621F /* TaskViewController.m in Sources */,
 				18CD104C217EBEF800E2621F /* AppDelegate+Extension.m in Sources */,
-				18CD10E5217EC36D00E2621F /* LoginViewModel.m in Sources */,
 				18CD1058217EBEF800E2621F /* UIActionSheet+HZBitAlertAction.m in Sources */,
 				18CD10B8217EBF0A00E2621F /* HZBitNavigationBar.m in Sources */,
+				1842D9F42188762400D14CD1 /* UploadHKSJAuthInfoViewModel.m in Sources */,
 				18CD10E8217EC64F00E2621F /* MainViewController.m in Sources */,
+				1842DA482188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m in Sources */,
 				18CD10B3217EBF0A00E2621F /* BitButton.m in Sources */,
 				18CD1014217EBEF200E2621F /* openssl_wrapper.m in Sources */,
 				3F376B0D218405DB0043A931 /* DispatcherAuthorizeViewController.m in Sources */,
+				1842DA3C21887F1800D14CD1 /* GetAllDDYSjInfoViewModel.m in Sources */,
+				1842DA2A21887E3D00D14CD1 /* DelDDYCarViewModel.m in Sources */,
 				18CD105D217EBEF800E2621F /* UIControl+Custom.m in Sources */,
 				18ECD0C72182F46200009D0B /* PopMenuCell.m in Sources */,
 				3F376B1721845D830043A931 /* HomeCell.m in Sources */,
@@ -1519,13 +1762,21 @@
 				18CD0F96217EBEEB00E2621F /* SearchView.m in Sources */,
 				18CD109E217EBF0400E2621F /* TimeUtils.m in Sources */,
 				18CD1095217EBF0400E2621F /* GeTuiUtils.m in Sources */,
+				1842DA3621887EDA00D14CD1 /* GetAllCarMgrInfoResultData.m in Sources */,
 				18CD1061217EBEF800E2621F /* UIImage+Scale.m in Sources */,
+				1842DA002188774900D14CD1 /* UploadDLSJAuthInfoViewModel.m in Sources */,
 				18C87BCB2181F34200AFC3F4 /* NewPWDViewController.m in Sources */,
+				1842DA032188779100D14CD1 /* UploadUserAuthPhotoModel.m in Sources */,
 				18CD1057217EBEF800E2621F /* NSString+UUID.m in Sources */,
 				18CD1051217EBEF800E2621F /* NSDate+String.m in Sources */,
+				1842D9E5218874D200D14CD1 /* UploadDDYAuthInfoModel.m in Sources */,
 				18CD10E2217EC34400E2621F /* GTMBase64.m in Sources */,
+				1842D9B721886DCE00D14CD1 /* LoginModel.m in Sources */,
 				3F05AA0B2185C5260041D4A9 /* AssignCell.m in Sources */,
+				1842DA1E21887D3500D14CD1 /* UploadDWCarAuthModel.m in Sources */,
 				18CD111321801A0B00E2621F /* DriverViewController.m in Sources */,
+				1842DA1B21887D1000D14CD1 /* UploadDWCarAuthResultData.m in Sources */,
+				1842DA422188805700D14CD1 /* GetDDYOneSJInfoResultData.m in Sources */,
 				18CD1060217EBEF800E2621F /* UIImage+Rotate.m in Sources */,
 				18CD101B217EBEF200E2621F /* APIManager.m in Sources */,
 				18CD1016217EBEF200E2621F /* DBEntity.m in Sources */,
@@ -1542,21 +1793,31 @@
 				18CD1017217EBEF200E2621F /* FMDBManager.m in Sources */,
 				3F376B1A218488540043A931 /* HomeData.m in Sources */,
 				18C87BC82181EE8B00AFC3F4 /* SettingCell.m in Sources */,
+				1842D9BD21886DFD00D14CD1 /* RegisterViewModel.m in Sources */,
 				18CD10BE217EC21600E2621F /* HZNavViewController.m in Sources */,
 				18CD108F217EBF0400E2621F /* AESCryptUtils.m in Sources */,
 				18CD100D217EBEF200E2621F /* APAuthInfo.m in Sources */,
+				1842DA3021887E8F00D14CD1 /* GetAllCarMgrInfoModel.m in Sources */,
 				18CD1013217EBEF200E2621F /* APRSASigner.m in Sources */,
 				3F376B1D2184D7E60043A931 /* MHPopMenuView.m in Sources */,
+				1842D9CD218871AE00D14CD1 /* BaseRequestResult.m in Sources */,
+				1842DA1821887C9000D14CD1 /* UploadZBCarAuthResultData.m in Sources */,
+				1842D9C021886F2F00D14CD1 /* RegisterDeviceData.m in Sources */,
 				18CD10BA217EBF0A00E2621F /* HZBitPopupView.m in Sources */,
 				18CD1012217EBEF200E2621F /* PayResultApp.m in Sources */,
 				18CD1099217EBF0400E2621F /* MacUtils.m in Sources */,
+				1842DA452188806E00D14CD1 /* GetDDYOneSJInfoModel.m in Sources */,
 				18CD0F50217EBA0100E2621F /* ViewController.m in Sources */,
 				18CD0F5B217EBA0700E2621F /* main.m in Sources */,
 				18ECD0B82182ED4500009D0B /* DriverAuthorizedViewController.m in Sources */,
+				1842DA4E218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m in Sources */,
 				18CD1053217EBEF800E2621F /* NSMutableArray+JC.m in Sources */,
 				18CD10B9217EBF0A00E2621F /* HZBitPopupCellTableViewCell.m in Sources */,
+				1842DA2721887E0F00D14CD1 /* UploadCarMgrTLPhotoViewModel.m in Sources */,
+				1842D9D62188730200D14CD1 /* QueryViewModel.m in Sources */,
 				3F05AA082185BC820041D4A9 /* AssignOrderViewController.m in Sources */,
 				18CD10B7217EBF0A00E2621F /* HZBitActivityIndicatorView.m in Sources */,
+				1842DA4B218880EB00D14CD1 /* DelDDYOneSJInfoModel.m in Sources */,
 				18CD1062217EBEF800E2621F /* UIWindow+HZBitHierarchy.m in Sources */,
 				18CD1091217EBF0400E2621F /* AppUtils.m in Sources */,
 				18CD10B6217EBF0A00E2621F /* CustomTabbar.m in Sources */,
@@ -1570,49 +1831,72 @@
 				18ECD0B52182EA2800009D0B /* SearchResultTableViewController.m in Sources */,
 				18CD10FF217ED0B400E2621F /* UserInfo.m in Sources */,
 				18CD1011217EBEF200E2621F /* PayResponseApp.m in Sources */,
+				1842D9DC2188739200D14CD1 /* QueryResultData.m in Sources */,
+				1842DA2421887DEE00D14CD1 /* UploadCarMgrTLPhotoModel.m in Sources */,
 				18CD100E217EBEF200E2621F /* APOrderInfo.m in Sources */,
 				18ECD0CE2182FE9600009D0B /* AuthorizeLineView.m in Sources */,
 				18CD101C217EBEF200E2621F /* ErrorUserInfo.m in Sources */,
 				18CD101A217EBEF200E2621F /* MBManager.m in Sources */,
 				18CD10B5217EBF0A00E2621F /* CountDownButton.m in Sources */,
 				18CD1097217EBF0400E2621F /* LoginInfoUtils.m in Sources */,
+				1842D9FD2188772400D14CD1 /* UploadDLSJAuthInfoModel.m in Sources */,
+				1842D9BA21886DE600D14CD1 /* LoginViewModel.m in Sources */,
 				18CD11232181E53300E2621F /* AboutCell.m in Sources */,
+				1842DA2D21887E6D00D14CD1 /* DelDDYCarModel.m in Sources */,
+				1842DA1221887B7300D14CD1 /* UploadZBCarAuthModel.m in Sources */,
 				18CD109D217EBF0400E2621F /* TabBarUtls.m in Sources */,
 				18CD104F217EBEF800E2621F /* NSData+Add.m in Sources */,
+				1842D9F7218876A600D14CD1 /* UploadHKSJAuthInfoResultData.m in Sources */,
+				1842DA3F21887F5800D14CD1 /* GetAllDDYSjInfoResultData.m in Sources */,
 				18CD109A217EBF0400E2621F /* PhoneUtils.m in Sources */,
 				18CD0F98217EBEEB00E2621F /* HZBitViewModel.m in Sources */,
 				18CD0F94217EBEEB00E2621F /* HZBitModel.m in Sources */,
 				18CD0F97217EBEEB00E2621F /* HZBitViewController.m in Sources */,
+				1842D9F1218875DF00D14CD1 /* UploadHKSJAuthInfoModel.m in Sources */,
 				18CD11102180164A00E2621F /* AvatarView.m in Sources */,
 				18C87BC52181EE3F00AFC3F4 /* SettingViewController.m in Sources */,
 				3F05AA112185DF580041D4A9 /* AssignVehicleCell.m in Sources */,
 				18CD110A217F01C300E2621F /* LoginDropDown.m in Sources */,
 				18C87BCE2181F6FC00AFC3F4 /* DOperationViewController.m in Sources */,
+				1842DA06218877A000D14CD1 /* UploadUserAuthPhotoViewModel.m in Sources */,
 				18CD1056217EBEF800E2621F /* NSString+MD5.m in Sources */,
 				3F05AA0E2185DDB90041D4A9 /* AssignVehicleViewController.m in Sources */,
+				1842DA09218877E900D14CD1 /* GetUserAuthInfoViewModel.m in Sources */,
+				1842D9FA218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.m in Sources */,
+				1842D9EE218875AC00D14CD1 /* UploadDTAuthInfoModel.m in Sources */,
+				1842DA3321887EA700D14CD1 /* GetAllCarMgrInfoViewModel.m in Sources */,
 				18CD0F95217EBEEB00E2621F /* ELockTableAlertView.m in Sources */,
 				18CD1096217EBF0400E2621F /* HZBitRouter.m in Sources */,
 				18CD1098217EBF0400E2621F /* LoginoutUtils.m in Sources */,
+				1842D9B421886D4200D14CD1 /* RegisterModel.m in Sources */,
 				18CD0F83217EBEE400E2621F /* Contacts.m in Sources */,
+				1842D9E8218874F200D14CD1 /* UploadDDYAuthInfoViewModel.m in Sources */,
 				18CD105C217EBEF800E2621F /* UIButton+Extension.m in Sources */,
 				18CD105E217EBEF800E2621F /* UIImage+CircleImage.m in Sources */,
 				18ECD0BE2182F14E00009D0B /* AInfoInputViewController.m in Sources */,
 				18CD108E217EBF0400E2621F /* AccountUtils.m in Sources */,
+				1842D9D92188737200D14CD1 /* LoginResultData.m in Sources */,
 				18CD1055217EBEF800E2621F /* NSString+LittleEndian.m in Sources */,
 				18CD1019217EBEF200E2621F /* LockDBManager.m in Sources */,
 				18CD105A217EBEF800E2621F /* UIAlertView+HZBitAlertAction.m in Sources */,
 				18CD111621801B8200E2621F /* DriverCell.m in Sources */,
+				1842D9C72188701E00D14CD1 /* BaseData.m in Sources */,
+				1842D9EB2188755700D14CD1 /* UploadDTAuthInfoViewModel.m in Sources */,
 				18CD109C217EBF0400E2621F /* StatusBarUtils.m in Sources */,
 				18ECD0A92182AAAC00009D0B /* VehicleManagementViewController.m in Sources */,
+				1842D9D02188723A00D14CD1 /* RegisterResultData.m in Sources */,
 				18CD10BB217EBF0A00E2621F /* IssuanceView.m in Sources */,
 				18CD105B217EBEF800E2621F /* UIButton+EdgeInset.m in Sources */,
+				1842DA2121887D4A00D14CD1 /* UploadDWCarAuthViewModel.m in Sources */,
 				18CD105F217EBEF800E2621F /* UIImage+Color.m in Sources */,
 				18ECD0CB2182F4C000009D0B /* PopMenuModel.m in Sources */,
 				18CD10DD217EC30000E2621F /* LoginViewController.m in Sources */,
 				18CD1090217EBF0400E2621F /* AESUtils.m in Sources */,
+				1842DA1521887C3300D14CD1 /* UploadZBCarAuthViewModel.m in Sources */,
 				3F376B132184171B0043A931 /* SliderHeaderView.m in Sources */,
 				18CD1059217EBEF800E2621F /* UIAlertAction+Extension.m in Sources */,
 				18ECD0AC2182B0EF00009D0B /* VehicleManageCell.m in Sources */,
+				1842D9D3218872E400D14CD1 /* QueryModel.m in Sources */,
 				18CD0F4D217EBA0100E2621F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

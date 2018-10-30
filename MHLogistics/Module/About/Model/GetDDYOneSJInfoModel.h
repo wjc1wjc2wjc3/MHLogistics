@@ -1,8 +1,8 @@
 //
-//  LoginViewModel.h
+//  GetDDYOneSJInfoModel.h
 //  MHLogistics
 //
-//  Created by Apple on 2018/10/23.
+//  Created by Apple on 2018/10/30.
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginViewModel : HZBitModel
+@interface GetDDYOneSJInfoModel : HZBitModel
 
 @end
 

@@ -145,3 +145,4 @@
 "assignHorseMan" ="骑师";
 "assignSend" = "发送六联单号给客户";
 "assignVehicle" = "分配车辆";
+"networkException" = "网络异常,请确认设备连接网络后重试!";

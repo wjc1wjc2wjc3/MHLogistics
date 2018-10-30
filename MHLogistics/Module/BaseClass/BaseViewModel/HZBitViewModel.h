@@ -30,5 +30,5 @@ typedef void (^BitFailureBlock)(HZBitViewModel *errorCode);
 @property (nonatomic, copy) BitFailureBlock bitFailureBlock;
 
 - (NSString *)formatUrl:(NSString *)funcName;
-- (NSString *)payFormatUrl:(NSString *)funcName;
+
 @end
