@@ -1,26 +1,26 @@
 //
-//  HZBitViewModel.h
-//  HZBitSmartLock
+//  MXBitViewModel.h
+//  MHLogistics
 //
-//  Created by Apple on 10/20/17.
-//  Copyright © 2017 HZBit. All rights reserved.
+//  Created by Apple on 2018/10/31.
+//  Copyright © 2018 Apple. All rights reserved.
 //
 
-
+#import <Foundation/Foundation.h>
 #import "APIManager.h"
 #import "AESCryptUtils.h"
 #import "GTMBase64.h"
 #import "NSData+Add.h"
 #import "TimeUtils.h"
+NS_ASSUME_NONNULL_BEGIN
 
+@class MXBitViewModel;
 
-@class HZBitViewModel;
-
-typedef void (^BitSuccessBlock) (HZBitViewModel *returnValue);
+typedef void (^BitSuccessBlock) (MXBitViewModel *returnValue);
 typedef void (^BitErrorCodeBlock) (NSString *errorCode);
-typedef void (^BitFailureBlock)(HZBitViewModel *errorCode);
+typedef void (^BitFailureBlock)(MXBitViewModel *errorCode);
 
-@interface HZBitViewModel : NSObject
+@interface MXBitViewModel : NSObject
 
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy) NSString *status;
@@ -32,3 +32,5 @@ typedef void (^BitFailureBlock)(HZBitViewModel *errorCode);
 - (NSString *)formatUrl:(NSString *)funcName;
 
 @end
+
+NS_ASSUME_NONNULL_END

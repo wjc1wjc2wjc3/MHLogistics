@@ -14,6 +14,6 @@
 + (instancetype)sharedInstance;
 
 
-- (HZBitViewController *)viewControllerForViewModel:(HZBitViewModel *)viewModel;
+- (HZBitViewController *)viewControllerForViewModel:(MXBitViewModel *)viewModel;
 
 @end

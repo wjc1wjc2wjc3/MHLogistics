@@ -26,7 +26,7 @@
     return sharedInstance;
 }
 
-- (HZBitViewController *)viewControllerForViewModel:(HZBitViewModel *)viewModel {
+- (HZBitViewController *)viewControllerForViewModel:(MXBitViewModel *)viewModel {
     NSString *viewController = self.viewModelViewMappings[NSStringFromClass(viewModel.class)];
     
     NSParameterAssert([NSClassFromString(viewController) isSubclassOfClass:[HZBitViewController class]]);

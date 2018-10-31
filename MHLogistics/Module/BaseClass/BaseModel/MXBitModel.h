@@ -1,12 +1,14 @@
 //
-//  HZBitModel.h
-//  HZBitSmartLock
+//  MXBitModel.h
+//  MHLogistics
 //
-//  Created by Apple on 10/20/17.
-//  Copyright © 2017 HZBit. All rights reserved.
+//  Created by Apple on 2018/10/31.
+//  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "AESCryptUtils.h"
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, EnumUType) {
     eDispatcher = 0x01,    //调度员
@@ -15,8 +17,7 @@ typedef NS_ENUM(NSUInteger, EnumUType) {
     eSingleDrive,         //单头司机
 };
 
-
-@interface HZBitModel : NSObject
+@interface MXBitModel : NSObject
 
 @property (nonatomic, copy) NSString *time;
 @property (nonatomic, copy) NSString *token;
@@ -25,4 +26,7 @@ typedef NS_ENUM(NSUInteger, EnumUType) {
 
 - (NSDictionary *)dictionary;
 
+
 @end
+
+NS_ASSUME_NONNULL_END

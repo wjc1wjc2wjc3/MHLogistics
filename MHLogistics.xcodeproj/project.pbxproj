@@ -55,6 +55,8 @@
 		1842DA482188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA472188807E00D14CD1 /* GetDDYOneSJInfoViewModel.m */; };
 		1842DA4B218880EB00D14CD1 /* DelDDYOneSJInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA4A218880EB00D14CD1 /* DelDDYOneSJInfoModel.m */; };
 		1842DA4E218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA4D218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m */; };
+		1842DA5121893AAA00D14CD1 /* MXBitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA5021893AAA00D14CD1 /* MXBitModel.m */; };
+		1842DA5421893C1800D14CD1 /* MXBitViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DA5321893C1800D14CD1 /* MXBitViewModel.m */; };
 		18C87BC52181EE3F00AFC3F4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */; };
 		18C87BC82181EE8B00AFC3F4 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BC72181EE8B00AFC3F4 /* SettingCell.m */; };
 		18C87BCB2181F34200AFC3F4 /* NewPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C87BCA2181F34200AFC3F4 /* NewPWDViewController.m */; };
@@ -69,11 +71,9 @@
 		18CD0F70217EBA0700E2621F /* MHLogisticsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F6F217EBA0700E2621F /* MHLogisticsUITests.m */; };
 		18CD0F82217EBEE400E2621F /* BitUpdateApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F7F217EBEE400E2621F /* BitUpdateApp.m */; };
 		18CD0F83217EBEE400E2621F /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F81217EBEE400E2621F /* Contacts.m */; };
-		18CD0F94217EBEEB00E2621F /* HZBitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F88217EBEEB00E2621F /* HZBitModel.m */; };
 		18CD0F95217EBEEB00E2621F /* ELockTableAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F8B217EBEEB00E2621F /* ELockTableAlertView.m */; };
 		18CD0F96217EBEEB00E2621F /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F8D217EBEEB00E2621F /* SearchView.m */; };
 		18CD0F97217EBEEB00E2621F /* HZBitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F90217EBEEB00E2621F /* HZBitViewController.m */; };
-		18CD0F98217EBEEB00E2621F /* HZBitViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F93217EBEEB00E2621F /* HZBitViewModel.m */; };
 		18CD100B217EBEF200E2621F /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0F9B217EBEF200E2621F /* AlipaySDK.bundle */; };
 		18CD100C217EBEF200E2621F /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CD0F9C217EBEF200E2621F /* AlipaySDK.framework */; };
 		18CD100D217EBEF200E2621F /* APAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0F9E217EBEF200E2621F /* APAuthInfo.m */; };
@@ -295,6 +295,10 @@
 		1842DA4A218880EB00D14CD1 /* DelDDYOneSJInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelDDYOneSJInfoModel.m; sourceTree = "<group>"; };
 		1842DA4C218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelDDYOneSJInfoViewModel.h; sourceTree = "<group>"; };
 		1842DA4D218880FE00D14CD1 /* DelDDYOneSJInfoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelDDYOneSJInfoViewModel.m; sourceTree = "<group>"; };
+		1842DA4F21893AAA00D14CD1 /* MXBitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXBitModel.h; sourceTree = "<group>"; };
+		1842DA5021893AAA00D14CD1 /* MXBitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXBitModel.m; sourceTree = "<group>"; };
+		1842DA5221893C1800D14CD1 /* MXBitViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXBitViewModel.h; sourceTree = "<group>"; };
+		1842DA5321893C1800D14CD1 /* MXBitViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXBitViewModel.m; sourceTree = "<group>"; };
 		18C87BC32181EE3F00AFC3F4 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		18C87BC42181EE3F00AFC3F4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		18C87BC62181EE8B00AFC3F4 /* SettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
@@ -323,16 +327,12 @@
 		18CD0F7F217EBEE400E2621F /* BitUpdateApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitUpdateApp.m; sourceTree = "<group>"; };
 		18CD0F80217EBEE400E2621F /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
 		18CD0F81217EBEE400E2621F /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
-		18CD0F87217EBEEB00E2621F /* HZBitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZBitModel.h; sourceTree = "<group>"; };
-		18CD0F88217EBEEB00E2621F /* HZBitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBitModel.m; sourceTree = "<group>"; };
 		18CD0F8A217EBEEB00E2621F /* ELockTableAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELockTableAlertView.h; sourceTree = "<group>"; };
 		18CD0F8B217EBEEB00E2621F /* ELockTableAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELockTableAlertView.m; sourceTree = "<group>"; };
 		18CD0F8C217EBEEB00E2621F /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
 		18CD0F8D217EBEEB00E2621F /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
 		18CD0F8F217EBEEB00E2621F /* HZBitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZBitViewController.h; sourceTree = "<group>"; };
 		18CD0F90217EBEEB00E2621F /* HZBitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBitViewController.m; sourceTree = "<group>"; };
-		18CD0F92217EBEEB00E2621F /* HZBitViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZBitViewModel.h; sourceTree = "<group>"; };
-		18CD0F93217EBEEB00E2621F /* HZBitViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBitViewModel.m; sourceTree = "<group>"; };
 		18CD0F9B217EBEF200E2621F /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		18CD0F9C217EBEF200E2621F /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		18CD0F9D217EBEF200E2621F /* APAuthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAuthInfo.h; sourceTree = "<group>"; };
@@ -772,8 +772,8 @@
 		18CD0F86217EBEEB00E2621F /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0F87217EBEEB00E2621F /* HZBitModel.h */,
-				18CD0F88217EBEEB00E2621F /* HZBitModel.m */,
+				1842DA4F21893AAA00D14CD1 /* MXBitModel.h */,
+				1842DA5021893AAA00D14CD1 /* MXBitModel.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -801,8 +801,8 @@
 		18CD0F91217EBEEB00E2621F /* BaseViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				18CD0F92217EBEEB00E2621F /* HZBitViewModel.h */,
-				18CD0F93217EBEEB00E2621F /* HZBitViewModel.m */,
+				1842DA5221893C1800D14CD1 /* MXBitViewModel.h */,
+				1842DA5321893C1800D14CD1 /* MXBitViewModel.m */,
 			);
 			path = BaseViewModel;
 			sourceTree = "<group>";
@@ -1849,8 +1849,6 @@
 				1842D9F7218876A600D14CD1 /* UploadHKSJAuthInfoResultData.m in Sources */,
 				1842DA3F21887F5800D14CD1 /* GetAllDDYSjInfoResultData.m in Sources */,
 				18CD109A217EBF0400E2621F /* PhoneUtils.m in Sources */,
-				18CD0F98217EBEEB00E2621F /* HZBitViewModel.m in Sources */,
-				18CD0F94217EBEEB00E2621F /* HZBitModel.m in Sources */,
 				18CD0F97217EBEEB00E2621F /* HZBitViewController.m in Sources */,
 				1842D9F1218875DF00D14CD1 /* UploadHKSJAuthInfoModel.m in Sources */,
 				18CD11102180164A00E2621F /* AvatarView.m in Sources */,
@@ -1861,7 +1859,9 @@
 				1842DA06218877A000D14CD1 /* UploadUserAuthPhotoViewModel.m in Sources */,
 				18CD1056217EBEF800E2621F /* NSString+MD5.m in Sources */,
 				3F05AA0E2185DDB90041D4A9 /* AssignVehicleViewController.m in Sources */,
+				1842DA5121893AAA00D14CD1 /* MXBitModel.m in Sources */,
 				1842DA09218877E900D14CD1 /* GetUserAuthInfoViewModel.m in Sources */,
+				1842DA5421893C1800D14CD1 /* MXBitViewModel.m in Sources */,
 				1842D9FA218876FD00D14CD1 /* UploadDLSJAuthInfoResultData.m in Sources */,
 				1842D9EE218875AC00D14CD1 /* UploadDTAuthInfoModel.m in Sources */,
 				1842DA3321887EA700D14CD1 /* GetAllCarMgrInfoViewModel.m in Sources */,

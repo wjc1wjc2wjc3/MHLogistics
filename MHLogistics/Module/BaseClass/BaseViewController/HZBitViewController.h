@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HZBitViewModel.h"
+#import "MXBitViewModel.h"
 #import "HZNavViewController.h"
 #import "DeviceUtils.h"
 #import <MJRefresh/MJRefresh.h>
@@ -17,7 +17,7 @@ typedef void(^headerRefreshBlock)(void);
 @interface HZBitViewController : UIViewController
 
 @property (nonatomic, copy) NSString *naviTitle;
-@property (nonatomic, strong, readonly) HZBitViewModel *viewModel;
+@property (nonatomic, strong, readonly) MXBitViewModel *viewModel;
 
 - (instancetype)init;
 - (HZBitViewController *)initWithViewModel:(id)viewModel;

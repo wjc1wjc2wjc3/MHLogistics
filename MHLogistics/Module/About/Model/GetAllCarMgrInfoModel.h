@@ -6,11 +6,11 @@
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "HZBitModel.h"
+#import "MXBitModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GetAllCarMgrInfoModel : HZBitModel
+@interface GetAllCarMgrInfoModel : MXBitModel
 
 @end
 

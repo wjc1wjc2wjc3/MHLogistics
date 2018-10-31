@@ -6,11 +6,11 @@
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "HZBitViewModel.h"
+#import "MXBitViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UploadDLSJAuthInfoViewModel : HZBitViewModel
+@interface UploadDLSJAuthInfoViewModel : MXBitViewModel
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSURLSessionDataTask *)startRequest:(NSDictionary *)param;

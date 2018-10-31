@@ -12,7 +12,7 @@ NSInteger const indicatorTag = 1000;
 
 @interface HZBitViewController ()
 
-@property (nonatomic, strong, readwrite) HZBitViewModel *viewModel;
+@property (nonatomic, strong, readwrite) MXBitViewModel *viewModel;
 @property (nonatomic, weak)UIActivityIndicatorView *indicatorView;
 @property (nonatomic, weak)UIView *indicatorViewBg;
 @end

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HZBitViewModel.h"
+#import "MXBitViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DelDDYOneSJInfoViewModel : HZBitViewModel
+@interface DelDDYOneSJInfoViewModel : MXBitViewModel
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSURLSessionDataTask *)startRequest:(NSDictionary *)param;

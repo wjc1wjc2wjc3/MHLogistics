@@ -6,11 +6,11 @@
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "HZBitModel.h"
+#import "MXBitModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UploadDTAuthInfoModel : HZBitModel
+@interface UploadDTAuthInfoModel : MXBitModel
 
 @property (nonatomic, copy) NSString *Name;
 @property (nonatomic, copy) NSString *Phone;

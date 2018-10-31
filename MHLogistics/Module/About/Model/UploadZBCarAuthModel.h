@@ -6,11 +6,11 @@
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "HZBitModel.h"
+#import "MXBitModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UploadZBCarAuthModel : HZBitModel
+@interface UploadZBCarAuthModel : MXBitModel
 
 @property (nonatomic, copy) NSString *CarType;          //车辆类型，1自备货柜，2吨位车
 @property (nonatomic, copy) NSString *HkNO;             //香港车牌号

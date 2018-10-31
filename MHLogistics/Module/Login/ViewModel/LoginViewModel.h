@@ -6,11 +6,11 @@
 //  Copyright © 2018 Apple. All rights reserved.
 //
 
-#import "HZBitViewModel.h"
+#import "MXBitViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginViewModel : HZBitViewModel
+@interface LoginViewModel : MXBitViewModel
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
